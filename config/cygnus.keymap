@@ -120,10 +120,10 @@
 
         raise_layer {
             bindings = <
-&kp ESC               &kp KP_NUMBER_7          &kp KP_NUMBER_8          &kp KP_NUMBER_9  &kp KP_NUMBER_0  &kp HOME          &kp PAGE_UP     &kp UP    &kp PAGE_DOWN  &trans
-&kp CAPSLOCK          &kp KP_NUMBER_4          &kp KP_NUMBER_5          &kp KP_NUMBER_6  &kp AT           &kp END           &kp LEFT_ARROW  &kp DOWN  &kp RIGHT      &bootloader
-&kp DEL               &kp KP_N1                &kp KP_NUMBER_2          &kp KP_NUMBER_3  &kp DOT          &trans            &trans          &trans    &trans         &trans
-              &trans                   &trans                   &trans                   &trans           &mo 4     &trans
+&kp F1             &kp F2             &kp F3             &kp F4     &kp F5     &kp F8             &kp F9     &kp F10    &kp F11    &kp F12
+&kp SPACE          &kp SPACE          &kp SPACE          &kp SPACE  &kp F6     &kp F7             &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE
+&kp SPACE          &kp SPACE          &kp SPACE          &kp SPACE  &kp SPACE  &kp SPACE          &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE
+           &trans             &trans             &trans             &trans     &mo 4      &trans
             >;
         };
 
@@ -145,12 +145,12 @@
             >;
         };
 
-        layer_5 {
+        game_layer {
             bindings = <
-&trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
-&gresc          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
-&trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
-        &trans          &trans          &trans          &trans  &trans  &trans
+&kp TAB                     &trans          &trans             &trans  &trans  &trans          &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT              &trans          &trans             &trans  &trans  &trans          &trans  &trans  &trans  &trans
+&kp LCTRL                   &trans          &trans             &trans  &trans  &trans          &trans  &trans  &trans  &trans
+                &kp ESCAPE          &trans          &kp SPACE          &trans  &trans  &trans
             >;
         };
 
