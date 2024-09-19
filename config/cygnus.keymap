@@ -67,6 +67,21 @@
             bindings = <&kp PIPE>;
             key-positions = <14 15>;
         };
+
+        Gamemode {
+            bindings = <&to 3>;
+            key-positions = <11 12 13>;
+        };
+
+        less_than {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <11 12>;
+        };
+
+        greater_than {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <17 18>;
+        };
     };
 
     behaviors {
@@ -129,17 +144,17 @@
 
         game_layer {
             bindings = <
-&kp TAB                &kp W                &kp E             &kp R  &kp T  &none         &none  &none  &none  &none
-&kp LEFT_SHIFT         &kp A                &kp S             &kp D  &kp F  &none         &none  &none  &none  &none
-&kp LCTRL              &kp Z                &kp X             &kp C  &kp V  &none         &none  &none  &none  &none
-                &mo 4         &kp LEFT_ALT         &kp SPACE         &none  &none  &none
+&kp TAB                &kp W                &kp E             &kp R  &kp T  &none         &none  &none      &none  &none
+&kp LEFT_SHIFT         &kp A                &kp S             &kp D  &kp F  &none         &none  &none      &none  &none
+&kp LCTRL              &kp Z                &kp X             &kp C  &kp V  &none         &none  &kp ENTER  &none  &kp ESCAPE
+                &mo 4         &kp LEFT_ALT         &kp SPACE         &to 0  &none  &none
             >;
         };
 
         game_layer2 {
             bindings = <
 &trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
-&trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
+&trans          &trans          &trans          &trans  &kp G   &trans          &trans  &trans  &trans  &trans
 &trans          &kp N1          &kp N2          &kp N3  &kp N4  &trans          &trans  &trans  &trans  &trans
         &trans          &trans          &trans          &trans  &trans  &trans
             >;
