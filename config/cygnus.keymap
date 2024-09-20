@@ -167,7 +167,7 @@
 
         del {
             bindings = <&kp DELETE>;
-            key-positions = <8 9>;
+            key-positions = <18 19>;
             layers = <1>;
         };
     };
