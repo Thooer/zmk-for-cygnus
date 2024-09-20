@@ -237,10 +237,10 @@
 
         else {
             bindings = <
-&kp INS            &kp HOME                &kp UP            &kp END    &kp PAGE_UP    &kp GRAVE          &kp STAR  &kp FSLH   &kp PERCENT  &kp BSLH
-&kp PSCRN          &kp LEFT                &kp DOWN          &kp RIGHT  &kp PAGE_DOWN  &kp SQT            &kp PLUS  &kp MINUS  &kp EQUAL    &kp SEMI
-&kp N1             &kp N2                  &kp N3            &kp N4     &kp N5         &kp N6             &kp N7    &kp N8     &kp N9       &kp N0
-           &trans            &kp LEFT_WIN            &trans             &trans         &trans     &trans
+&kp INS               &kp HOME                &kp UP                    &kp END    &kp PAGE_UP    &kp GRAVE          &kp STAR  &kp FSLH   &kp PERCENT  &kp BSLH
+&kp PSCRN             &kp LEFT                &kp DOWN                  &kp RIGHT  &kp PAGE_DOWN  &kp SQT            &kp PLUS  &kp MINUS  &kp EQUAL    &kp SEMI
+&kp N1                &kp N2                  &kp N3                    &kp N4     &kp N5         &kp N6             &kp N7    &kp N8     &kp N9       &kp N0
+           &kp LCTRL            &kp LEFT_WIN            &kp LEFT_SHIFT             &trans         &trans     &trans
             >;
         };
 
