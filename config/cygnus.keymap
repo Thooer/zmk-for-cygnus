@@ -60,7 +60,7 @@
 
         Gamemode {
             bindings = <&to 2>;
-            key-positions = <11 12 13 16 17 18>;
+            key-positions = <14 15>;
         };
 
         less_than {
@@ -135,7 +135,7 @@
 
         btmode {
             bindings = <&to 4>;
-            key-positions = <21 22 23 26 27 28>;
+            key-positions = <25 24>;
         };
 
         sec2574470183 {
@@ -150,7 +150,7 @@
 
         defaultmode {
             bindings = <&to 0>;
-            key-positions = <1 2 3 6 7 8>;
+            key-positions = <33 32>;
         };
 
         tab {
