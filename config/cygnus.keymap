@@ -155,7 +155,7 @@
 
         btmode {
             bindings = <&mo 4>;
-            key-positions = <25 24>;
+            key-positions = <32 33>;
         };
 
         sec2574470183 {
@@ -170,7 +170,7 @@
 
         defaultmode {
             bindings = <&to 0>;
-            key-positions = <33 32>;
+            key-positions = <24 25>;
         };
 
         tab {
