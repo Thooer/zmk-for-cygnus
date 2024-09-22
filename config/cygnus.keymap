@@ -243,26 +243,31 @@
         fanxiegang {
             bindings = <&kp NON_US_BACKSLASH>;
             key-positions = <17 26>;
+            layers = <0 1>;
         };
 
         plus {
             bindings = <&kp PLUS>;
             key-positions = <23 22>;
+            layers = <0 1>;
         };
 
         sub {
             bindings = <&kp MINUS>;
             key-positions = <26 27>;
+            layers = <0 1>;
         };
 
         mul {
             bindings = <&kp ASTERISK>;
             key-positions = <22 21>;
+            layers = <0 1>;
         };
 
         rem {
             bindings = <&kp PERCENT>;
             key-positions = <27 28>;
+            layers = <0 1>;
         };
     };
 
