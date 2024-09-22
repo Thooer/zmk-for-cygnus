@@ -197,6 +197,73 @@
             bindings = <&kp ESCAPE>;
             key-positions = <0 9>;
         };
+
+        up {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <2 7>;
+            layers = <0 1>;
+        };
+
+        down {
+            bindings = <&kp DOWN>;
+            key-positions = <12 17>;
+            layers = <0 1>;
+        };
+
+        left {
+            bindings = <&kp LEFT>;
+            key-positions = <11 16>;
+            layers = <0 1>;
+        };
+
+        right {
+            bindings = <&kp RIGHT>;
+            key-positions = <13 18>;
+            layers = <0 1>;
+        };
+
+        home {
+            bindings = <&kp HOME>;
+            key-positions = <1 6>;
+            layers = <0 1>;
+        };
+
+        end {
+            bindings = <&kp END>;
+            key-positions = <3 8>;
+            layers = <0 1>;
+        };
+
+        xigang {
+            bindings = <&kp SLASH>;
+            key-positions = <12 23>;
+            layers = <0 1>;
+        };
+
+        fanxiegang {
+            bindings = <&kp NON_US_BACKSLASH>;
+            key-positions = <17 26>;
+        };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <23 22>;
+        };
+
+        sub {
+            bindings = <&kp MINUS>;
+            key-positions = <26 27>;
+        };
+
+        mul {
+            bindings = <&kp ASTERISK>;
+            key-positions = <22 21>;
+        };
+
+        rem {
+            bindings = <&kp PERCENT>;
+            key-positions = <27 28>;
+        };
     };
 
     behaviors {
