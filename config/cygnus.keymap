@@ -360,6 +360,7 @@
         k5 {
             bindings = <&kp CARET>;
             key-positions = <3 4>;
+            layers = <0>;
         };
 
         k6 {
