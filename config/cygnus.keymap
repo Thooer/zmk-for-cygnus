@@ -359,7 +359,7 @@
 
         k7 {
             bindings = <&kp GRAVE>;
-            key-positions = <3 6>;
+            key-positions = <6 3>;
             layers = <0>;
         };
 
