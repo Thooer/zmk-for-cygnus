@@ -233,13 +233,13 @@
 
         xigang {
             bindings = <&kp SLASH>;
-            key-positions = <12 23>;
+            key-positions = <17 26>;
             layers = <0>;
         };
 
         fanxiegang {
             bindings = <&kp NON_US_BACKSLASH>;
-            key-positions = <17 26>;
+            key-positions = <12 23>;
             layers = <0>;
         };
 
@@ -341,7 +341,7 @@
 
         k4 {
             bindings = <&kp HASH>;
-            key-positions = <24 23>;
+            key-positions = <13 14>;
             layers = <0>;
         };
 
@@ -353,19 +353,19 @@
 
         k6 {
             bindings = <&kp LCTRL>;
-            key-positions = <14 13>;
+            key-positions = <23 24>;
             layers = <0>;
         };
 
         k7 {
             bindings = <&kp GRAVE>;
-            key-positions = <6 3>;
+            key-positions = <8 1>;
             layers = <0>;
         };
 
         k8 {
             bindings = <&kp TILDE>;
-            key-positions = <13 16>;
+            key-positions = <18 11>;
             layers = <0>;
         };
     };
