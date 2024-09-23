@@ -347,19 +347,19 @@
 
         k7 {
             bindings = <&kp GRAVE>;
-            key-positions = <3 1>;
+            key-positions = <21 23>;
             layers = <0>;
         };
 
         k8 {
             bindings = <&kp TILDE>;
-            key-positions = <6 8>;
+            key-positions = <26 28>;
             layers = <0>;
         };
 
         k5 {
             bindings = <&kp DOLLAR>;
-            key-positions = <21 11>;
+            key-positions = <3 4>;
         };
 
         k6 {
