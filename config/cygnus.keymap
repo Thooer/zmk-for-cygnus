@@ -333,39 +333,10 @@
             layers = <0>;
         };
 
-        k3 {
+        kk {
             bindings = <&kp AMPERSAND>;
-            key-positions = <25 15>;
+            key-positions = <5 6>;
             layers = <0>;
-        };
-
-        k4 {
-            bindings = <&kp HASH>;
-            key-positions = <24 14>;
-            layers = <0>;
-        };
-
-        k7 {
-            bindings = <&kp GRAVE>;
-            key-positions = <21 23>;
-            layers = <0>;
-        };
-
-        k8 {
-            bindings = <&kp TILDE>;
-            key-positions = <26 28>;
-            layers = <0>;
-        };
-
-        k5 {
-            bindings = <&kp CARET>;
-            key-positions = <13 14>;
-            layers = <0>;
-        };
-
-        k6 {
-            bindings = <&kp DOLLAR>;
-            key-positions = <24 23>;
         };
     };
 
