@@ -358,7 +358,7 @@
         };
 
         k5 {
-            bindings = <&kp DOLLAR>;
+            bindings = <&kp DLLR>;
             key-positions = <3 4>;
         };
 
