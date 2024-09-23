@@ -358,12 +358,12 @@
         };
 
         k5 {
-            bindings = <&kp DLLR>;
+            bindings = <&kp CARET>;
             key-positions = <3 4>;
         };
 
         k6 {
-            bindings = <&kp CARET>;
+            bindings = <&kp DOLLAR>;
             key-positions = <24 23>;
         };
     };
