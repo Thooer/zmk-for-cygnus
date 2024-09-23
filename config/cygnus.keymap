@@ -335,13 +335,13 @@
 
         k3 {
             bindings = <&kp AMPERSAND>;
-            key-positions = <6 15>;
+            key-positions = <25 16>;
             layers = <0>;
         };
 
         k4 {
             bindings = <&kp HASH>;
-            key-positions = <3 14>;
+            key-positions = <13 24>;
             layers = <0>;
         };
 
