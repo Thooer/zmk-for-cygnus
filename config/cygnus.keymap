@@ -77,14 +77,14 @@
             bindings = <&kp LESS_THAN>;
             key-positions = <11 12>;
             layers = <0>;
-            timeout-ms = <30>;
+            timeout-ms = <10>;
         };
 
         greater_than {
             bindings = <&kp GREATER_THAN>;
             key-positions = <17 18>;
             layers = <0>;
-            timeout-ms = <30>;
+            timeout-ms = <10>;
         };
 
         f1 {
