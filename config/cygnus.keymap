@@ -29,7 +29,6 @@
             key-positions = <3 2>;
             timeout-ms = <30>;
             layers = <0>;
-            require-prior-idle-ms = <70>;
         };
 
         right_bkt {
@@ -37,7 +36,6 @@
             key-positions = <6 7>;
             timeout-ms = <30>;
             layers = <0>;
-            require-prior-idle-ms = <70>;
         };
 
         left_par {
@@ -45,7 +43,6 @@
             key-positions = <12 13>;
             timeout-ms = <20>;
             layers = <0>;
-            require-prior-idle-ms = <70>;
         };
 
         right_par {
@@ -53,7 +50,6 @@
             key-positions = <16 17>;
             timeout-ms = <20>;
             layers = <0>;
-            require-prior-idle-ms = <70>;
         };
 
         left_brace {
@@ -61,7 +57,6 @@
             key-positions = <1 2>;
             timeout-ms = <10>;
             layers = <0>;
-            require-prior-idle-ms = <70>;
         };
 
         right_brace {
@@ -69,7 +64,6 @@
             key-positions = <7 8>;
             timeout-ms = <10>;
             layers = <0>;
-            require-prior-idle-ms = <70>;
         };
 
         Gamemode {
@@ -84,7 +78,6 @@
             key-positions = <11 12>;
             layers = <0>;
             timeout-ms = <30>;
-            require-prior-idle-ms = <70>;
         };
 
         greater_than {
@@ -92,7 +85,6 @@
             key-positions = <17 18>;
             layers = <0>;
             timeout-ms = <30>;
-            require-prior-idle-ms = <70>;
         };
 
         f1 {
@@ -219,7 +211,6 @@
             key-positions = <17 26>;
             layers = <0>;
             timeout-ms = <30>;
-            require-prior-idle-ms = <70>;
         };
 
         fanxiegang {
@@ -227,7 +218,6 @@
             key-positions = <12 23>;
             layers = <0>;
             timeout-ms = <30>;
-            require-prior-idle-ms = <70>;
         };
 
         plus {
@@ -235,7 +225,6 @@
             key-positions = <23 22>;
             layers = <0>;
             timeout-ms = <30>;
-            require-prior-idle-ms = <70>;
         };
 
         sub {
@@ -243,7 +232,6 @@
             key-positions = <26 27>;
             layers = <0 1>;
             timeout-ms = <30>;
-            require-prior-idle-ms = <70>;
         };
 
         mul {
@@ -251,7 +239,6 @@
             key-positions = <22 21>;
             layers = <0>;
             timeout-ms = <30>;
-            require-prior-idle-ms = <70>;
         };
 
         rem {
@@ -259,7 +246,6 @@
             key-positions = <27 28>;
             layers = <0>;
             timeout-ms = <30>;
-            require-prior-idle-ms = <70>;
         };
 
         equal {
@@ -267,7 +253,6 @@
             key-positions = <26 23>;
             layers = <0>;
             timeout-ms = <30>;
-            require-prior-idle-ms = <70>;
         };
 
         quote {
@@ -275,7 +260,6 @@
             key-positions = <22 27>;
             layers = <0>;
             timeout-ms = <30>;
-            require-prior-idle-ms = <70>;
         };
 
         quote2 {
@@ -283,7 +267,6 @@
             key-positions = <21 28>;
             layers = <0>;
             timeout-ms = <30>;
-            require-prior-idle-ms = <70>;
         };
 
         game-num1 {
@@ -328,7 +311,6 @@
             key-positions = <15 16>;
             layers = <0>;
             timeout-ms = <30>;
-            require-prior-idle-ms = <70>;
         };
 
         k2 {
@@ -336,7 +318,6 @@
             key-positions = <25 26>;
             layers = <0>;
             timeout-ms = <30>;
-            require-prior-idle-ms = <70>;
         };
 
         k3 {
@@ -344,7 +325,6 @@
             key-positions = <5 6>;
             layers = <0>;
             timeout-ms = <30>;
-            require-prior-idle-ms = <70>;
         };
 
         enter {
@@ -352,7 +332,6 @@
             key-positions = <14 13>;
             layers = <0>;
             timeout-ms = <30>;
-            require-prior-idle-ms = <70>;
         };
 
         kk1 {
@@ -360,7 +339,6 @@
             key-positions = <23 24>;
             layers = <0>;
             timeout-ms = <30>;
-            require-prior-idle-ms = <70>;
         };
 
         kk3 {
@@ -368,7 +346,6 @@
             key-positions = <3 4>;
             layers = <0>;
             timeout-ms = <30>;
-            require-prior-idle-ms = <70>;
         };
     };
 
