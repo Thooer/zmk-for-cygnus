@@ -182,55 +182,20 @@
 
         del {
             bindings = <&kp DELETE>;
-            key-positions = <8 9>;
+            key-positions = <32 33>;
             layers = <0>;
         };
 
         Caps {
             bindings = <&kp CAPS>;
             key-positions = <19 10>;
-            layers = <0>;
+            layers = <1>;
         };
 
         esc {
             bindings = <&kp ESCAPE>;
             key-positions = <0 9>;
-            layers = <0>;
-        };
-
-        up {
-            bindings = <&kp UP_ARROW>;
-            key-positions = <2 7>;
-            layers = <0>;
-        };
-
-        down {
-            bindings = <&kp DOWN>;
-            key-positions = <12 17>;
-            layers = <0>;
-        };
-
-        left {
-            bindings = <&kp LEFT>;
-            key-positions = <11 16>;
-            layers = <0>;
-        };
-
-        right {
-            bindings = <&kp RIGHT>;
-            key-positions = <13 18>;
-            layers = <0>;
-        };
-
-        home {
-            bindings = <&kp HOME>;
-            key-positions = <1 6>;
-        };
-
-        end {
-            bindings = <&kp END>;
-            key-positions = <3 8>;
-            layers = <0>;
+            layers = <1>;
         };
 
         xigang {
@@ -319,7 +284,7 @@
 
         win {
             bindings = <&kp LEFT_WIN>;
-            key-positions = <20 29>;
+            key-positions = <34 31>;
             layers = <0>;
         };
 
@@ -335,7 +300,7 @@
             layers = <0>;
         };
 
-        kk {
+        k3 {
             bindings = <&kp AMPERSAND>;
             key-positions = <5 6>;
             layers = <0>;
@@ -343,7 +308,37 @@
 
         enter {
             bindings = <&kp ENTER>;
+            key-positions = <14 32>;
+            layers = <0>;
+        };
+
+        kk1 {
+            bindings = <&kp HASH>;
             key-positions = <14 13>;
+            layers = <0>;
+        };
+
+        kk2 {
+            bindings = <&kp DOLLAR>;
+            key-positions = <24 23>;
+            layers = <0>;
+        };
+
+        kk3 {
+            bindings = <&kp CARET>;
+            key-positions = <4 3>;
+            layers = <0>;
+        };
+
+        kkk1 {
+            bindings = <&kp GRAVE>;
+            key-positions = <20 21>;
+            layers = <0>;
+        };
+
+        kkk2 {
+            bindings = <&kp TILDE>;
+            key-positions = <29 28>;
             layers = <0>;
         };
     };
@@ -413,7 +408,7 @@
 
         ctrl {
             bindings = <
-&kp GRAVE                 &kp C_PREVIOUS                &kp C_VOLUME_UP            &kp C_BRIGHTNESS_INC  &none   &kp INS            &kp HOME  &kp UP    &kp END    &kp PG_UP
+&none                     &kp C_PREVIOUS                &kp C_VOLUME_UP            &kp C_BRIGHTNESS_INC  &none   &kp INS            &kp HOME  &kp UP    &kp END    &kp PG_UP
 &kp K_PLAY_PAUSE          &kp C_NEXT                    &kp C_VOLUME_DOWN          &kp C_BRIGHTNESS_DEC  &none   &kp PSCRN          &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
 &kp N1                    &kp N2                        &kp N3                     &kp N4                &kp N5  &kp N6             &kp N7    &kp N8    &kp N9     &kp N0
                   &trans                  &kp LEFT_WIN                     &trans                        &trans  &trans     &trans
