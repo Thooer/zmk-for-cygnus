@@ -307,20 +307,14 @@
         };
 
         enter {
-            bindings = <&kp ENTER>;
-            key-positions = <14 32>;
+            bindings = <&mt ENTER LS(DOLLAR)>;
+            key-positions = <14 13>;
             layers = <0>;
         };
 
         kk1 {
             bindings = <&kp HASH>;
             key-positions = <14 13>;
-            layers = <0>;
-        };
-
-        kk2 {
-            bindings = <&kp DOLLAR>;
-            key-positions = <23 24>;
             layers = <0>;
         };
 
