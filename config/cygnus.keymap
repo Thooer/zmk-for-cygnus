@@ -309,7 +309,6 @@
             bindings = <&kp EXCLAMATION>;
             key-positions = <12 17>;
             layers = <0>;
-            timeout-ms = <20>;
         };
 
         k2 {
@@ -337,7 +336,6 @@
             bindings = <&kp CARET>;
             key-positions = <11 18>;
             layers = <0>;
-            timeout-ms = <20>;
         };
 
         enterleft {
@@ -349,6 +347,7 @@
             bindings = <&kp HASH>;
             key-positions = <14 13>;
             layers = <0>;
+            timeout-ms = <20>;
         };
     };
 
