@@ -256,14 +256,14 @@
 
         quote {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <16 25>;
+            key-positions = <16 7>;
             layers = <0>;
             timeout-ms = <70>;
         };
 
         quote2 {
             bindings = <&kp SQT>;
-            key-positions = <24 13>;
+            key-positions = <13 2>;
             layers = <0>;
             timeout-ms = <70>;
         };
@@ -327,7 +327,7 @@
         };
 
         enter {
-            bindings = <&mt ENTER HASH>;
+            bindings = <&kp HASH>;
             key-positions = <14 13>;
             layers = <0>;
             timeout-ms = <20>;
