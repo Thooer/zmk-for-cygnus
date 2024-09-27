@@ -326,13 +326,6 @@
             timeout-ms = <20>;
         };
 
-        enter {
-            bindings = <&mt HASH ENTER>;
-            key-positions = <14 13>;
-            layers = <0>;
-            timeout-ms = <20>;
-        };
-
         kk1 {
             bindings = <&kp DOLLAR>;
             key-positions = <23 24>;
@@ -355,6 +348,7 @@
         jinghao {
             bindings = <&kp HASH>;
             key-positions = <14 13>;
+            layers = <0>;
         };
     };
 
