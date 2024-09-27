@@ -352,6 +352,11 @@
             layers = <0>;
             timeout-ms = <20>;
         };
+
+        de {
+            bindings = <&kp DEL>;
+            key-positions = <32 4>;
+        };
     };
 
     behaviors {
