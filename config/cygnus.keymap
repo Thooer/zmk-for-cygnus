@@ -351,6 +351,11 @@
             bindings = <&kp ENTER>;
             key-positions = <32 20>;
         };
+
+        jinghao {
+            bindings = <&kp HASH>;
+            key-positions = <14 13>;
+        };
     };
 
     behaviors {
