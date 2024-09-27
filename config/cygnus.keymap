@@ -335,19 +335,19 @@
 
         kk3 {
             bindings = <&kp CARET>;
-            key-positions = <3 4>;
+            key-positions = <10 11>;
             layers = <0>;
             timeout-ms = <20>;
         };
 
         enterleft {
             bindings = <&kp ENTER>;
-            key-positions = <32 20>;
+            key-positions = <14 13>;
         };
 
         jinghao {
             bindings = <&kp HASH>;
-            key-positions = <14 13>;
+            key-positions = <4 3>;
             layers = <0>;
         };
     };
