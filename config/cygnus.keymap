@@ -309,33 +309,35 @@
             bindings = <&kp EXCLAMATION>;
             key-positions = <16 18>;
             layers = <0>;
+            timeout-ms = <30>;
         };
 
         k2 {
             bindings = <&kp AT_SIGN>;
             key-positions = <26 28>;
             layers = <0>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
         };
 
         k3 {
             bindings = <&kp AMPERSAND>;
             key-positions = <8 6>;
             layers = <0>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
         };
 
         kk1 {
             bindings = <&kp DOLLAR>;
             key-positions = <23 21>;
             layers = <0>;
-            timeout-ms = <20>;
+            timeout-ms = <30>;
         };
 
         kk3 {
             bindings = <&kp CARET>;
             key-positions = <3 1>;
             layers = <0>;
+            timeout-ms = <30>;
         };
 
         enterleft {
