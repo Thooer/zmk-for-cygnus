@@ -360,6 +360,13 @@
             layers = <0>;
             timeout-ms = <30>;
         };
+
+        kkkk2 {
+            bindings = <&kp TILDE>;
+            key-positions = <4 3>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
     };
 
     behaviors {
