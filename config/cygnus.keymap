@@ -356,14 +356,7 @@
 
         kkkk1 {
             bindings = <&kp GRAVE>;
-            key-positions = <16 15>;
-            layers = <0>;
-            timeout-ms = <30>;
-        };
-
-        kkkk2 {
-            bindings = <&kp TILDE>;
-            key-positions = <26 25>;
+            key-positions = <6 5>;
             layers = <0>;
             timeout-ms = <30>;
         };
