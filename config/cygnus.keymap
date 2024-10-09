@@ -342,7 +342,7 @@
 
         enterleft {
             bindings = <&kp ENTER>;
-            key-positions = <31 12>;
+            key-positions = <32 14>;
             layers = <0>;
             timeout-ms = <30>;
         };
