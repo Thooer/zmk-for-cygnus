@@ -181,7 +181,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <24 23>;
+            key-positions = <11 10>;
             layers = <0>;
             timeout-ms = <30>;
         };
@@ -356,16 +356,9 @@
 
         kkkk1 {
             bindings = <&kp GRAVE>;
-            key-positions = <6 5>;
+            key-positions = <4 3>;
             layers = <0>;
             timeout-ms = <30>;
-        };
-
-        kkkk2 {
-            bindings = <&kp TILDE>;
-            key-positions = <4 3>;
-            timeout-ms = <20>;
-            layers = <0>;
         };
     };
 
