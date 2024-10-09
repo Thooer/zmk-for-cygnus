@@ -342,7 +342,7 @@
 
         enterleft {
             bindings = <&kp ENTER>;
-            key-positions = <14 13>;
+            key-positions = <31 13>;
             layers = <0>;
             timeout-ms = <30>;
         };
@@ -354,16 +354,9 @@
             timeout-ms = <30>;
         };
 
-        kkkk1 {
-            bindings = <&kp GRAVE>;
-            key-positions = <4 3>;
-            layers = <0>;
-            timeout-ms = <30>;
-        };
-
         delete {
             bindings = <&kp BACKSPACE>;
-            key-positions = <24 23>;
+            key-positions = <23 31>;
             timeout-ms = <30>;
             layers = <0>;
         };
