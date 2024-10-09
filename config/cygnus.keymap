@@ -360,6 +360,13 @@
             layers = <0>;
             timeout-ms = <30>;
         };
+
+        delete {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <24 23>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
     };
 
     behaviors {
