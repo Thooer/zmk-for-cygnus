@@ -353,11 +353,6 @@
             timeout-ms = <20>;
         };
 
-        de {
-            bindings = <&kp DEL>;
-            key-positions = <4 3>;
-        };
-
         kkkk1 {
             bindings = <&kp GRAVE>;
             key-positions = <25 26>;
