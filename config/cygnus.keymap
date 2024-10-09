@@ -351,7 +351,7 @@
             bindings = <&kp HASH>;
             key-positions = <13 11>;
             layers = <0>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
 
         delete {
