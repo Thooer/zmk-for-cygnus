@@ -181,7 +181,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 10>;
+            key-positions = <31 12>;
             layers = <0>;
             timeout-ms = <30>;
         };
@@ -342,7 +342,7 @@
 
         enterleft {
             bindings = <&kp ENTER>;
-            key-positions = <31 13>;
+            key-positions = <13 10>;
             layers = <0>;
             timeout-ms = <30>;
         };
@@ -356,7 +356,7 @@
 
         delete {
             bindings = <&kp BACKSPACE>;
-            key-positions = <23 31>;
+            key-positions = <31 13>;
             timeout-ms = <30>;
             layers = <0>;
         };
