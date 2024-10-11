@@ -438,16 +438,25 @@
 &kp TAB                     &kp Q                &kp W             &kp E  &kp R          &none          &none  &none  &none  &none
 &kp LEFT_SHIFT              &kp A                &kp S             &kp D  &kp F          &none          &none  &none  &none  &none
 &kp LCTRL                   &kp Z                &kp X             &kp C  &kp V          &none          &none  &none  &none  &none
-                &kp ESCAPE         &kp LEFT_ALT         &kp SPACE         &kp BACKSPACE  &mo 1  &trans
+                &kp ESCAPE         &kp LEFT_ALT         &kp SPACE         &kp BACKSPACE  &mo 4  &trans
             >;
         };
 
         bt {
             bindings = <
-&bt BT_SEL 0         &bt BT_SEL 1         &bt BT_SEL 2         &bt BT_SEL 3  &bt BT_SEL 4  &none          &none  &none  &none  &none
-&bt BT_PRV           &bt BT_NXT           &bt BT_CLR           &none         &none         &none          &none  &none  &none  &none
-&none                &none                &none                &none         &none         &none          &none  &none  &none  &none
-              &none                &none                &none                &none         &trans  &none
+&bt BT_SEL 0         &bt BT_SEL 1         &bt BT_SEL 2         &bt BT_SEL 3  &bt BT_SEL 4  &none         &none  &none  &none  &none
+&bt BT_PRV           &bt BT_NXT           &bt BT_CLR           &none         &none         &none         &none  &none  &none  &none
+&none                &none                &none                &none         &none         &none         &none  &none  &none  &none
+              &none                &none                &none                &none         &to 4  &none
+            >;
+        };
+
+        copy {
+            bindings = <
+&to 0               &kp C_PREVIOUS                &kp C_VOLUME_UP               &kp C_BRIGHTNESS_INC  &to 2   &kp INS            &kp HOME  &kp UP    &kp END    &kp PG_UP
+&kp GRAVE           &kp C_NEXT                    &kp C_VOLUME_DOWN             &kp C_BRIGHTNESS_DEC  &to 3   &kp PSCRN          &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
+&kp N1              &kp N2                        &kp N3                        &kp N4                &kp N5  &kp N6             &kp N7    &kp N8    &kp N9     &kp N0
+           &kp TAB                  &kp LEFT_WIN                     &kp ENTER                        &trans  &trans     &trans
             >;
         };
     };
