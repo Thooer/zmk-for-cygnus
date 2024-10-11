@@ -7,12 +7,12 @@ manifest:
 
   projects:
     - name: zmk
-      remote: kuolemax
-      revision: encoder-fix
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
     # - name: zmk
-    #   remote: zmkfirmware
-    #   revision: main
+    #   remote: kuolemax
+    #   revision: encoder-fix
     #   import: app/west.yml
 
   self:
