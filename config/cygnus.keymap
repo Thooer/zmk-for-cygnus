@@ -352,6 +352,12 @@
             timeout-ms = <30>;
             layers = <0>;
         };
+
+        gamewin {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <32 30>;
+            layers = <2>;
+        };
     };
 
     behaviors {
