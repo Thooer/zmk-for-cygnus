@@ -287,7 +287,6 @@
         win {
             bindings = <&kp LEFT_WIN>;
             key-positions = <34 31>;
-            layers = <0>;
             timeout-ms = <30>;
         };
 
@@ -350,6 +349,13 @@
         deletee {
             bindings = <&kp DEL>;
             key-positions = <20 31>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        win2 {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <32 13>;
             timeout-ms = <30>;
             layers = <0>;
         };
