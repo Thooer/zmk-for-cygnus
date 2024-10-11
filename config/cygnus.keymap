@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 
 &mt {
     tapping-term-ms = <200>;
@@ -170,12 +171,6 @@
             timeout-ms = <30>;
         };
 
-        Caps {
-            bindings = <&kp CAPS>;
-            key-positions = <19 10>;
-            layers = <2>;
-        };
-
         esc {
             bindings = <&kp ESCAPE>;
             key-positions = <0 9>;
@@ -317,13 +312,6 @@
             timeout-ms = <30>;
         };
 
-        enterleft {
-            bindings = <&kp ENTER>;
-            key-positions = <32 14>;
-            layers = <0>;
-            timeout-ms = <30>;
-        };
-
         jinghao {
             bindings = <&kp HASH>;
             key-positions = <13 11>;
@@ -402,28 +390,28 @@
 
         default_layer {
             bindings = <
-&kp Q                  &kp W             &kp E             &kp R  &kp T          &kp Y                &kp U  &kp I      &kp O       &kp P
-&kp A                  &kp S             &kp D             &kp F  &kp G          &kp H                &kp J  &kp K      &kp L       &kp SEMICOLON
-&kp Z                  &kp X             &kp C             &kp V  &kp B          &kp N                &kp M  &kp COMMA  &kp PERIOD  &kp ENTER
-       &kp LEFT_SHIFT         &kp SPACE         &kp LCTRL         &kp BACKSPACE  &mo 2  &kp LEFT_ALT
+&mt ESCAPE Q                  &kp W             &kp E             &kp R  &kp T          &kp Y                &kp U  &kp I      &kp O       &kp P
+&kp A                         &kp S             &kp D             &kp F  &kp G          &kp H                &kp J  &kp K      &kp L       &kp SEMICOLON
+&mt ENTER Z                   &kp X             &kp C             &kp V  &kp B          &kp N                &kp M  &kp COMMA  &kp PERIOD  &kp ENTER
+              &kp LEFT_SHIFT         &kp SPACE         &kp LCTRL         &kp BACKSPACE  &mo 2  &kp LEFT_ALT
             >;
         };
 
         game_layer {
             bindings = <
-&kp TAB                     &kp Q                &kp W             &kp E  &kp R   &none           &none     &kp UP_ARROW  &none      &none
-&kp LEFT_SHIFT              &kp A                &kp S             &kp D  &kp F   &none           &kp LEFT  &kp DOWN      &kp RIGHT  &none
-&kp LCTRL                   &kp Z                &kp X             &kp C  &kp V   &none           &none     &none         &none      &none
-                &kp ESCAPE         &kp LEFT_ALT         &kp SPACE         &trans  &trans  &trans
+&kp TAB                     &kp Q                &kp W             &kp E  &kp R      &none                 &none     &kp UP_ARROW  &none      &none
+&kp LEFT_SHIFT              &kp A                &kp S             &kp D  &kp F      &none                 &kp LEFT  &kp DOWN      &kp RIGHT  &gresc
+&kp LCTRL                   &kp Z                &kp X             &kp C  &kp V      &kp N1                &kp N2    &kp N3        &kp N4     &kp N5
+                &kp ESCAPE         &kp LEFT_ALT         &kp SPACE         &mkp LCLK  &mkp RCLK  &mkp MCLK
             >;
         };
 
         ctrl {
             bindings = <
-&kp GRAVE           &kp C_PREVIOUS                &kp C_VOLUME_UP               &kp C_BRIGHTNESS_INC  &to 1       &kp INS                &kp HOME  &kp UP    &kp END    &kp PG_UP
-&kp TILDE           &kp C_NEXT                    &kp C_VOLUME_DOWN             &kp C_BRIGHTNESS_DEC  &to 0       &kp PSCRN              &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
-&kp N1              &kp N2                        &kp N3                        &kp N4                &kp N5      &kp N6                 &kp N7    &kp N8    &kp N9     &kp N0
-           &kp TAB                  &kp LEFT_WIN                     &kp ENTER                        &bt BT_PRV  &none      &bt BT_NXT
+&kp GRAVE          &kp C_PREVIOUS                &kp C_VOLUME_UP            &kp C_BRIGHTNESS_INC  &to 1       &kp INS                &kp HOME  &kp UP    &kp END    &kp PG_UP
+&kp TILDE          &kp C_NEXT                    &kp C_VOLUME_DOWN          &kp C_BRIGHTNESS_DEC  &to 0       &kp PSCRN              &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
+&kp N1             &kp N2                        &kp N3                     &kp N4                &kp N5      &kp N6                 &kp N7    &kp N8    &kp N9     &kp N0
+           &trans                  &kp LEFT_WIN                     &trans                        &bt BT_PRV  &none      &bt BT_NXT
             >;
         };
     };
