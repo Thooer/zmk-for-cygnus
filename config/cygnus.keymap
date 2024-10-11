@@ -161,7 +161,6 @@
         defaultmode {
             bindings = <&to 0>;
             key-positions = <34 4>;
-            layers = <2 3>;
             timeout-ms = <30>;
         };
 
