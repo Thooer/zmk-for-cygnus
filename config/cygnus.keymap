@@ -342,7 +342,7 @@
             bindings = <&kp LEFT_WIN>;
             key-positions = <32 30>;
             layers = <1>;
-            timeout-ms = <30>;
+            timeout-ms = <31>;
         };
     };
 
