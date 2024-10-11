@@ -83,85 +83,79 @@
         f1 {
             bindings = <&kp F1>;
             key-positions = <0 10>;
-            layers = <1>;
+            layers = <2>;
         };
 
         f2 {
             bindings = <&kp F2>;
             key-positions = <1 11>;
-            layers = <1>;
+            layers = <2>;
         };
 
         f3 {
             bindings = <&kp F3>;
             key-positions = <2 12>;
-            layers = <1>;
+            layers = <2>;
         };
 
         f4 {
             bindings = <&kp F4>;
             key-positions = <3 13>;
-            layers = <1>;
+            layers = <2>;
         };
 
         f5 {
             bindings = <&kp F5>;
             key-positions = <4 14>;
-            layers = <1>;
+            layers = <2>;
         };
 
         f6 {
             bindings = <&kp F6>;
             key-positions = <14 3>;
-            layers = <1>;
+            layers = <2>;
         };
 
         f7 {
             bindings = <&kp F7>;
             key-positions = <15 6>;
-            layers = <1>;
+            layers = <2>;
         };
 
         f8 {
             bindings = <&kp F8>;
             key-positions = <5 15>;
-            layers = <1>;
+            layers = <2>;
         };
 
         f9 {
             bindings = <&kp F9>;
             key-positions = <6 16>;
-            layers = <1>;
+            layers = <2>;
         };
 
         f10 {
             bindings = <&kp F10>;
             key-positions = <7 17>;
-            layers = <1>;
+            layers = <2>;
         };
 
         f11 {
             bindings = <&kp F11>;
             key-positions = <8 18>;
-            layers = <1>;
+            layers = <2>;
         };
 
         f12 {
             bindings = <&kp F12>;
             key-positions = <9 19>;
-            layers = <1>;
+            layers = <2>;
         };
 
         sec2574470183 {
             bindings = <&sec_macro>;
             key-positions = <8 7 16>;
-            layers = <1>;
-        };
-
-        defaultmode {
-            bindings = <&to 0>;
-            key-positions = <34 4>;
-            timeout-ms = <30>;
+            layers = <2>;
         };
 
         tab {
@@ -181,13 +175,13 @@
         Caps {
             bindings = <&kp CAPS>;
             key-positions = <19 10>;
-            layers = <1>;
+            layers = <2>;
         };
 
         esc {
             bindings = <&kp ESCAPE>;
             key-positions = <0 9>;
-            layers = <1>;
+            layers = <2>;
         };
 
         xigang {
@@ -214,7 +208,7 @@
         sub {
             bindings = <&kp MINUS>;
             key-positions = <26 27>;
-            layers = <0 1>;
+            layers = <0 2>;
             timeout-ms = <20>;
         };
 
@@ -256,31 +250,31 @@
         game-num1 {
             bindings = <&kp NUMBER_1>;
             key-positions = <0 10>;
-            layers = <2>;
+            layers = <1>;
         };
 
         game-num2 {
             bindings = <&kp NUMBER_2>;
             key-positions = <1 11>;
-            layers = <2>;
+            layers = <1>;
         };
 
         game-num3 {
             bindings = <&kp NUMBER_3>;
             key-positions = <12 2>;
-            layers = <2>;
+            layers = <1>;
         };
 
         game-num4 {
             bindings = <&kp NUMBER_4>;
             key-positions = <3 13>;
-            layers = <2>;
+            layers = <1>;
         };
 
         game-num5 {
             bindings = <&kp N5>;
             key-positions = <4 14>;
-            layers = <2>;
+            layers = <1>;
         };
 
         win {
@@ -346,17 +340,10 @@
             layers = <0>;
         };
 
-        deletee {
-            bindings = <&kp DEL>;
-            key-positions = <20 31>;
-            timeout-ms = <30>;
-            layers = <0>;
-        };
-
-        gamewin {
+        G_win {
             bindings = <&kp LEFT_WIN>;
             key-positions = <32 30>;
-            layers = <2>;
+            layers = <1>;
         };
     };
 
@@ -419,43 +406,25 @@
 &kp Q                  &kp W             &kp E             &kp R  &kp T          &kp Y                &kp U  &kp I      &kp O       &kp P
 &kp A                  &kp S             &kp D             &kp F  &kp G          &kp H                &kp J  &kp K      &kp L       &kp SEMICOLON
 &kp Z                  &kp X             &kp C             &kp V  &kp B          &kp N                &kp M  &kp COMMA  &kp PERIOD  &kp ENTER
-       &kp LEFT_SHIFT         &kp SPACE         &kp LCTRL         &kp BACKSPACE  &mo 1  &kp LEFT_ALT
-            >;
-        };
-
-        ctrl {
-            bindings = <
-&to 0               &kp C_PREVIOUS                &kp C_VOLUME_UP               &kp C_BRIGHTNESS_INC  &to 2   &kp INS            &kp HOME  &kp UP    &kp END    &kp PG_UP
-&kp GRAVE           &kp C_NEXT                    &kp C_VOLUME_DOWN             &kp C_BRIGHTNESS_DEC  &to 3   &kp PSCRN          &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
-&kp N1              &kp N2                        &kp N3                        &kp N4                &kp N5  &kp N6             &kp N7    &kp N8    &kp N9     &kp N0
-           &kp TAB                  &kp LEFT_WIN                     &kp ENTER                        &trans  &trans     &trans
+       &kp LEFT_SHIFT         &kp SPACE         &kp LCTRL         &kp BACKSPACE  &mo 2  &kp LEFT_ALT
             >;
         };
 
         game_layer {
             bindings = <
-&kp TAB                     &kp Q                &kp W             &kp E  &kp R          &none          &none  &none  &none  &none
-&kp LEFT_SHIFT              &kp A                &kp S             &kp D  &kp F          &none          &none  &none  &none  &none
-&kp LCTRL                   &kp Z                &kp X             &kp C  &kp V          &none          &none  &none  &none  &none
-                &kp ESCAPE         &kp LEFT_ALT         &kp SPACE         &kp BACKSPACE  &mo 4  &trans
+&kp TAB                     &kp Q                &kp W             &kp E  &kp R   &none           &none     &kp UP_ARROW  &none      &none
+&kp LEFT_SHIFT              &kp A                &kp S             &kp D  &kp F   &none           &kp LEFT  &kp DOWN      &kp RIGHT  &none
+&kp LCTRL                   &kp Z                &kp X             &kp C  &kp V   &none           &none     &none         &none      &none
+                &kp ESCAPE         &kp LEFT_ALT         &kp SPACE         &trans  &trans  &trans
             >;
         };
 
-        bt {
+        ctrl {
             bindings = <
-&bt BT_SEL 0         &bt BT_SEL 1         &bt BT_SEL 2         &bt BT_SEL 3  &bt BT_SEL 4  &none         &none  &none  &none  &none
-&bt BT_PRV           &bt BT_NXT           &bt BT_CLR           &none         &none         &none         &none  &none  &none  &none
-&none                &none                &none                &none         &none         &none         &none  &none  &none  &none
-              &none                &none                &none                &none         &to 4  &none
-            >;
-        };
-
-        copy {
-            bindings = <
-&to 0               &kp C_PREVIOUS                &kp C_VOLUME_UP               &kp C_BRIGHTNESS_INC  &to 2   &kp INS            &kp HOME  &kp UP    &kp END    &kp PG_UP
-&kp GRAVE           &kp C_NEXT                    &kp C_VOLUME_DOWN             &kp C_BRIGHTNESS_DEC  &to 3   &kp PSCRN          &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
-&kp N1              &kp N2                        &kp N3                        &kp N4                &kp N5  &kp N6             &kp N7    &kp N8    &kp N9     &kp N0
-           &kp TAB                  &kp LEFT_WIN                     &kp ENTER                        &trans  &trans     &trans
+&kp GRAVE           &kp C_PREVIOUS                &kp C_VOLUME_UP               &kp C_BRIGHTNESS_INC  &to 1       &kp INS                &kp HOME  &kp UP    &kp END    &kp PG_UP
+&kp TILDE           &kp C_NEXT                    &kp C_VOLUME_DOWN             &kp C_BRIGHTNESS_DEC  &to 0       &kp PSCRN              &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
+&kp N1              &kp N2                        &kp N3                        &kp N4                &kp N5      &kp N6                 &kp N7    &kp N8    &kp N9     &kp N0
+           &kp TAB                  &kp LEFT_WIN                     &kp ENTER                        &bt BT_PRV  &none      &bt BT_NXT
             >;
         };
     };
