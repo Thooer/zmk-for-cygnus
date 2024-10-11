@@ -2,19 +2,6 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Install dependencies
-      run: |
-        sudo apt-get install -y python3-pip
-        pip3 install --user west
-
-    - name: Update West dependencies
-      run: |
-        west update 
-
-    - name: Build ZMK
-      uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    with:
+      matrix: cygnus  # 根据你的键盘配置修改
