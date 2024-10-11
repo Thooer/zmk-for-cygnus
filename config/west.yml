@@ -4,8 +4,7 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: kuolemax
       url-base: https://github.com/kuolemax
-    - name: zephyrproject-rtos
-      url-base: https://github.com/zephyrproject-rtos
+
   projects:
     - name: zmk
       remote: kuolemax
@@ -16,8 +15,5 @@ manifest:
     #   revision: main
     #   import: app/west.yml
 
-    - name: zephyr
-      remote: zephyrproject-rtos
-      revision: main
   self:
     path: config
