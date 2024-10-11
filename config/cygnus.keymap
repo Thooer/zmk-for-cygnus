@@ -288,6 +288,7 @@
             bindings = <&kp LEFT_WIN>;
             key-positions = <34 31>;
             timeout-ms = <30>;
+            layers = <0>;
         };
 
         k1 {
