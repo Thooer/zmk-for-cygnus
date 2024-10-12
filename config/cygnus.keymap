@@ -166,15 +166,9 @@
 
         del {
             bindings = <&kp DELETE>;
-            key-positions = <32 33>;
+            key-positions = <31 12>;
             layers = <0>;
             timeout-ms = <30>;
-        };
-
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <0 9>;
-            layers = <2>;
         };
 
         xigang {
@@ -321,7 +315,7 @@
 
         delete {
             bindings = <&kp BACKSPACE>;
-            key-positions = <20 32>;
+            key-positions = <31 13>;
             timeout-ms = <30>;
             layers = <0>;
         };
@@ -331,6 +325,27 @@
             key-positions = <32 30>;
             layers = <1>;
             timeout-ms = <30>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <31 10>;
+            layers = <0>;
+            timeout-ms = <30>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <31 0>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        win2 {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <31 20>;
+            timeout-ms = <30>;
+            layers = <0>;
         };
     };
 
@@ -397,17 +412,17 @@
 
         default_layer {
             bindings = <
-&mt ESCAPE Q                    &kp W             &kp E             &kp R  &kp T          &kp Y                &kp U  &kp I      &kp O       &kp P
-&mt ENTER A                     &kp S             &kp D             &kp F  &kp G          &kp H                &kp J  &kp K      &kp L       &mt SEMICOLON ENTER
-&mt LEFT_WIN Z                  &kp X             &kp C             &kp V  &kp B          &kp N                &kp M  &kp COMMA  &kp PERIOD  &mt TILDE GRAVE
-                &kp LEFT_SHIFT         &kp SPACE         &kp LCTRL         &kp BACKSPACE  &mo 2  &kp LEFT_ALT
+&kp Q                  &kp W             &kp E             &kp R  &kp T          &kp Y                      &kp U  &kp I      &kp O       &kp P
+&kp A                  &kp S             &kp D             &kp F  &kp G          &kp H                      &kp J  &kp K      &kp L       &kp ENTER
+&kp Z                  &kp X             &kp C             &kp V  &kp B          &kp N                      &kp M  &kp COMMA  &kp PERIOD  &kp SEMICOLON
+       &kp LEFT_SHIFT         &kp SPACE         &kp LCTRL         &kp BACKSPACE  &mo 2  &mt LEFT_ALT GRAVE
             >;
         };
 
         game_layer {
             bindings = <
 &kp TAB                     &kp Q                &kp W             &kp E  &kp R      &none                 &none     &kp UP_ARROW  &none      &none
-&kp LEFT_SHIFT              &kp A                &kp S             &kp D  &kp F      &none                 &kp LEFT  &kp DOWN      &kp RIGHT  &gresc
+&kp LEFT_SHIFT              &kp A                &kp S             &kp D  &kp F      &none                 &kp LEFT  &kp DOWN      &kp RIGHT  &none
 &kp LCTRL                   &kp Z                &kp X             &kp C  &kp V      &kp N1                &kp N2    &kp N3        &kp N4     &kp N5
                 &kp ESCAPE         &kp LEFT_ALT         &kp SPACE         &mkp LCLK  &mkp RCLK  &mkp MCLK
             >;
@@ -415,10 +430,10 @@
 
         ctrl {
             bindings = <
-&bt BT_PRV          &kp C_PREVIOUS                &kp C_VOLUME_UP            &kp C_BRIGHTNESS_INC  &to 1           &kp INS           &kp HOME  &kp UP    &kp END    &kp PG_UP
-&bt BT_NXT          &kp C_NEXT                    &kp C_VOLUME_DOWN          &kp C_BRIGHTNESS_DEC  &to 0           &kp PSCRN         &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
-&kp N1              &kp N2                        &kp N3                     &kp N4                &kp N5          &kp N6            &kp N7    &kp N8    &kp N9     &kp N0
-            &trans                  &kp LEFT_WIN                     &trans                        &bt BT_CLR_ALL  &none      &none
+&none           &kp C_PREVIOUS                &kp C_VOLUME_UP            &kp C_BRIGHTNESS_INC  &bt BT_PRV      &kp INS           &kp HOME  &kp UP    &kp END    &kp PG_UP
+&none           &kp C_NEXT                    &kp C_VOLUME_DOWN          &kp C_BRIGHTNESS_DEC  &bt BT_NXT      &kp PSCRN         &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
+&kp N1          &kp N2                        &kp N3                     &kp N4                &kp N5          &kp N6            &kp N7    &kp N8    &kp N9     &kp N0
+        &trans                  &kp LEFT_WIN                     &trans                        &bt BT_CLR_ALL  &none      &none
             >;
         };
     };
