@@ -356,13 +356,13 @@
         };
 
         layer_exchange0 {
-            bindings = <&layer_change 0 0>;
+            bindings = <&layer_change 1 1>;
             key-positions = <4 5>;
             timeout-ms = <30>;
         };
 
         layer_exchange1 {
-            bindings = <&layer_change 1 1>;
+            bindings = <&layer_change 0 0>;
             key-positions = <14 15>;
             timeout-ms = <30>;
         };
