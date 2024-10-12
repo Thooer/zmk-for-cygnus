@@ -315,7 +315,7 @@
 
         delete {
             bindings = <&kp BACKSPACE>;
-            key-positions = <31 13>;
+            key-positions = <32 12>;
             timeout-ms = <30>;
             layers = <0>;
         };
@@ -343,9 +343,28 @@
 
         win2 {
             bindings = <&kp LEFT_WIN>;
-            key-positions = <31 20>;
+            key-positions = <20 21>;
             timeout-ms = <30>;
             layers = <0>;
+        };
+
+        cap {
+            bindings = <&kp CAPS>;
+            key-positions = <11 10>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        layer_exchange0 {
+            bindings = <&to 0>;
+            key-positions = <4 5>;
+            timeout-ms = <30>;
+        };
+
+        layer_exchange1 {
+            bindings = <&to 1>;
+            key-positions = <14 15>;
+            timeout-ms = <30>;
         };
     };
 
