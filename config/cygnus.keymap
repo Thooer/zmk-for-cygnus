@@ -313,13 +313,6 @@
             timeout-ms = <20>;
         };
 
-        delete {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <32 12>;
-            timeout-ms = <30>;
-            layers = <0>;
-        };
-
         G_win {
             bindings = <&kp LEFT_WIN>;
             key-positions = <32 30>;
@@ -337,20 +330,6 @@
         esc {
             bindings = <&kp ESCAPE>;
             key-positions = <31 0>;
-            timeout-ms = <30>;
-            layers = <0>;
-        };
-
-        win2 {
-            bindings = <&kp LEFT_WIN>;
-            key-positions = <20 21>;
-            timeout-ms = <30>;
-            layers = <0>;
-        };
-
-        cap {
-            bindings = <&kp CAPS>;
-            key-positions = <11 10>;
             timeout-ms = <30>;
             layers = <0>;
         };
@@ -386,6 +365,11 @@
             key-positions = <24 30>;
             layers = <1>;
             timeout-ms = <30>;
+        };
+
+        del2 {
+            bindings = <&kp DEL>;
+            key-positions = <32 33>;
         };
     };
 
