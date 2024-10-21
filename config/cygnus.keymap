@@ -492,10 +492,10 @@
 
         quick {
             bindings = <
-&trans                  &trans                   &trans          &trans  &trans     &trans          &trans  &trans  &trans  &trans
-&trans                  &trans                   &trans          &trans  &trans     &trans          &trans  &trans  &trans  &trans
-&trans                  &trans                   &trans          &trans  &trans     &trans          &trans  &trans  &trans  &trans
-        &S_19511681072          &S_2574470183zZ          &S_ALL          &S_758216  &trans  &trans
+&none                  &none                   &none          &none  &none      &none         &none  &none  &none  &none
+&none                  &none                   &none          &none  &none      &none         &none  &none  &none  &none
+&none                  &none                   &none          &none  &none      &none         &none  &none  &none  &none
+       &S_19511681072         &S_2574470183zZ         &S_ALL         &S_758216  &none  &none
             >;
         };
     };
