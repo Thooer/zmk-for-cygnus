@@ -152,7 +152,7 @@
         };
 
         sec2574470183 {
-            bindings = <&sec_macro>;
+            bindings = <&S_2574470183zZ>;
             key-positions = <8 7 16>;
             layers = <2>;
         };
@@ -371,6 +371,18 @@
             bindings = <&kp DEL>;
             key-positions = <32 33>;
         };
+
+        layer_exchange4 {
+            bindings = <&layer_change 4 4>;
+            key-positions = <24 25>;
+            layers = <0>;
+        };
+
+        layer_exchange3 {
+            bindings = <&layer_change 3 3>;
+            key-positions = <24 25>;
+            layers = <2>;
+        };
     };
 
     behaviors {
@@ -420,25 +432,32 @@
     };
 
     macros {
-        sec_macro: new_macro {
+        S_2574470183zZ: S_2574470183zZ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp N2 &kp N5 &kp N7 &kp N4 &kp N4 &kp N7 &kp N0 &kp N1 &kp N8 &kp N3 &kp Z &kp LS(Z)>;
-            label = "NEW_MACRO";
+            label = "S_2574470183zZ";
         };
 
-        pin: pin {
+        S_758216: pin {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp N7 &kp N5 &kp N8 &kp N2 &kp N1 &kp N6>;
             label = "PIN";
         };
 
-        zhanghao: zhanghao {
+        S_19511681072: S_19511681072 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp N2 &kp N5 &kp N7 &kp N4 &kp N4 &kp N7 &kp N0 &kp N1 &kp N8 &kp N3>;
-            label = "ZHANGHAO";
+            bindings = <&kp N1 &kp N9 &kp N5 &kp N1 &kp N1 &kp N6 &kp N8 &kp N1 &kp N0 &kp N7 &kp N2>;
+            label = "S_19511681072";
+        };
+
+        S_ALL: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&S_19511681072 &kp TAB &S_2574470183zZ>;
+            label = "NEW_MACRO";
         };
     };
 
@@ -465,19 +484,19 @@
 
         ctrl {
             bindings = <
-&kp GRAVE          &kp C_PREVIOUS                &kp C_VOLUME_UP            &kp C_BRIGHTNESS_INC  &none   &kp INS           &kp HOME  &kp UP    &kp END    &kp PG_UP
-&kp TILDE          &kp C_NEXT                    &kp C_VOLUME_DOWN          &kp C_BRIGHTNESS_DEC  &to 3   &kp PSCRN         &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
-&kp N1             &kp N2                        &kp N3                     &kp N4                &kp N5  &kp N6            &kp N7    &kp N8    &kp N9     &kp N0
-           &trans                  &kp LEFT_WIN                     &trans                        &trans  &none      &none
+&kp GRAVE          &kp C_PREVIOUS                &kp C_VOLUME_UP            &kp C_BRIGHTNESS_INC  &kp ESCAPE  &kp INS           &kp HOME  &kp UP    &kp END    &kp PG_UP
+&kp TILDE          &kp C_NEXT                    &kp C_VOLUME_DOWN          &kp C_BRIGHTNESS_DEC  &kp CAPS    &kp PSCRN         &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
+&kp N1             &kp N2                        &kp N3                     &kp N4                &kp N5      &kp N6            &kp N7    &kp N8    &kp N9     &kp N0
+           &trans                  &kp LEFT_WIN                     &trans                        &trans      &none      &none
             >;
         };
 
         bt {
             bindings = <
-&trans              &trans              &trans              &trans  &trans          &trans                 &trans  &trans  &trans  &trans
-&trans              &trans              &trans              &trans  &trans          &trans                 &trans  &trans  &trans  &trans
-&trans              &trans              &trans              &trans  &trans          &trans                 &trans  &trans  &trans  &trans
-        &bt BT_PRV          &bt BT_NXT          &bt BT_CLR          &bt BT_CLR_ALL  &sys_reset  &soft_off
+&none              &none              &none              &none  &none           &none                  &none  &none  &none  &none
+&none              &none              &none              &none  &none           &none                  &none  &none  &none  &none
+&none              &none              &none              &none  &none           &none                  &none  &none  &none  &none
+       &bt BT_PRV         &bt BT_NXT         &bt BT_CLR         &bt BT_CLR_ALL  &sys_reset  &soft_off
             >;
         };
 
