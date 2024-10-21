@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 
@@ -465,9 +466,27 @@
         ctrl {
             bindings = <
 &kp GRAVE          &kp C_PREVIOUS                &kp C_VOLUME_UP            &kp C_BRIGHTNESS_INC  &none   &kp INS           &kp HOME  &kp UP    &kp END    &kp PG_UP
-&kp TILDE          &kp C_NEXT                    &kp C_VOLUME_DOWN          &kp C_BRIGHTNESS_DEC  &none   &kp PSCRN         &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
+&kp TILDE          &kp C_NEXT                    &kp C_VOLUME_DOWN          &kp C_BRIGHTNESS_DEC  &to 3   &kp PSCRN         &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
 &kp N1             &kp N2                        &kp N3                     &kp N4                &kp N5  &kp N6            &kp N7    &kp N8    &kp N9     &kp N0
            &trans                  &kp LEFT_WIN                     &trans                        &trans  &none      &none
+            >;
+        };
+
+        bt {
+            bindings = <
+&trans              &trans              &trans              &trans  &trans          &trans                 &trans  &trans  &trans  &trans
+&trans              &trans              &trans              &trans  &trans          &trans                 &trans  &trans  &trans  &trans
+&trans              &trans              &trans              &trans  &trans          &trans                 &trans  &trans  &trans  &trans
+        &bt BT_PRV          &bt BT_NXT          &bt BT_CLR          &bt BT_CLR_ALL  &sys_reset  &soft_off
+            >;
+        };
+
+        quick {
+            bindings = <
+&trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
+&trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
+&trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
+        &trans          &trans          &trans          &trans  &trans  &trans
             >;
         };
     };
