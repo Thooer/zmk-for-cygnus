@@ -25,56 +25,56 @@
 
         left_bkt {
             bindings = <&kp LBKT>;
-            key-positions = <3 2>;
+            key-positions = <3 13>;
             timeout-ms = <20>;
             layers = <0>;
         };
 
         right_bkt {
             bindings = <&kp RBKT>;
-            key-positions = <6 7>;
+            key-positions = <16 6>;
             timeout-ms = <20>;
             layers = <0>;
         };
 
         left_par {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <12 13>;
+            key-positions = <12 2>;
             timeout-ms = <20>;
             layers = <0>;
         };
 
         right_par {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <16 17>;
+            key-positions = <17 7>;
             timeout-ms = <20>;
             layers = <0>;
         };
 
         left_brace {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <1 2>;
+            key-positions = <1 11>;
             timeout-ms = <20>;
             layers = <0>;
         };
 
         right_brace {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <7 8>;
+            key-positions = <8 18>;
             timeout-ms = <20>;
             layers = <0>;
         };
 
         less_than {
             bindings = <&kp LESS_THAN>;
-            key-positions = <11 12>;
+            key-positions = <0 10>;
             layers = <0>;
             timeout-ms = <20>;
         };
 
         greater_than {
             bindings = <&kp GREATER_THAN>;
-            key-positions = <17 18>;
+            key-positions = <9 19>;
             layers = <0>;
             timeout-ms = <20>;
         };
@@ -173,42 +173,42 @@
 
         xigang {
             bindings = <&kp SLASH>;
-            key-positions = <17 26>;
+            key-positions = <28 18>;
             layers = <0>;
             timeout-ms = <20>;
         };
 
         fanxiegang {
             bindings = <&kp NON_US_BACKSLASH>;
-            key-positions = <12 23>;
+            key-positions = <21 11>;
             layers = <0>;
             timeout-ms = <20>;
         };
 
         plus {
             bindings = <&kp PLUS>;
-            key-positions = <23 22>;
+            key-positions = <23 13>;
             layers = <0>;
             timeout-ms = <20>;
         };
 
         sub {
             bindings = <&kp MINUS>;
-            key-positions = <26 27>;
+            key-positions = <26 16>;
             layers = <0 2>;
             timeout-ms = <20>;
         };
 
         mul {
             bindings = <&kp ASTERISK>;
-            key-positions = <22 21>;
+            key-positions = <22 12>;
             layers = <0>;
             timeout-ms = <20>;
         };
 
         rem {
             bindings = <&kp PERCENT>;
-            key-positions = <27 28>;
+            key-positions = <27 17>;
             layers = <0>;
             timeout-ms = <20>;
         };
@@ -222,14 +222,14 @@
 
         quote {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <18 26>;
+            key-positions = <29 19>;
             layers = <0>;
             timeout-ms = <70>;
         };
 
         quote2 {
             bindings = <&kp SQT>;
-            key-positions = <23 11>;
+            key-positions = <20 10>;
             layers = <0>;
             timeout-ms = <70>;
         };
@@ -273,42 +273,42 @@
 
         k1 {
             bindings = <&kp EXCLAMATION>;
-            key-positions = <16 18>;
+            key-positions = <16 17>;
             layers = <0>;
             timeout-ms = <30>;
         };
 
         k2 {
             bindings = <&kp AT_SIGN>;
-            key-positions = <26 28>;
+            key-positions = <26 27>;
             layers = <0>;
             timeout-ms = <30>;
         };
 
         k3 {
             bindings = <&kp AMPERSAND>;
-            key-positions = <8 6>;
+            key-positions = <6 7>;
             layers = <0>;
             timeout-ms = <30>;
         };
 
         kk1 {
             bindings = <&kp DOLLAR>;
-            key-positions = <23 21>;
+            key-positions = <23 22>;
             layers = <0>;
             timeout-ms = <30>;
         };
 
         kk3 {
             bindings = <&kp CARET>;
-            key-positions = <3 1>;
+            key-positions = <3 2>;
             layers = <0>;
             timeout-ms = <30>;
         };
 
         jinghao {
             bindings = <&kp HASH>;
-            key-positions = <13 11>;
+            key-positions = <13 12>;
             layers = <0>;
             timeout-ms = <20>;
         };
