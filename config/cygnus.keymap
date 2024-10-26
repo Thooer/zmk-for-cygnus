@@ -151,12 +151,6 @@
             layers = <2>;
         };
 
-        sec2574470183 {
-            bindings = <&S_2574470183zZ>;
-            key-positions = <8 7 16>;
-            layers = <2>;
-        };
-
         tab {
             bindings = <&kp TAB>;
             key-positions = <0 1>;
