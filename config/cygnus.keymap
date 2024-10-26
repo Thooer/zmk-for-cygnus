@@ -481,10 +481,10 @@
 
         bt {
             bindings = <
-&none              &none              &none              &none  &none           &none                  &none  &none  &none  &none
-&none              &none              &none              &none  &none           &none                  &none  &none  &none  &none
-&none              &none              &none              &none  &none           &none                  &none  &none  &none  &none
-       &bt BT_PRV         &bt BT_NXT         &bt BT_CLR         &bt BT_CLR_ALL  &sys_reset  &soft_off
+&none                &none                &none                &none  &none  &none                  &none  &none  &none  &none
+&none                &none                &none                &none  &none  &none                  &none  &none  &none  &none
+&none                &none                &none                &none  &none  &none                  &none  &none  &none  &none
+       &bt BT_SEL 0         &bt BT_SEL 1         &bt BT_SEL 2         &none  &sys_reset  &soft_off
             >;
         };
 
