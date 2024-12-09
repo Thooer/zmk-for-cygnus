@@ -163,13 +163,6 @@
             timeout-ms = <20>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <12 11>;
-            layers = <0>;
-            timeout-ms = <20>;
-        };
-
         xigang {
             bindings = <&kp SLASH>;
             key-positions = <15 25>;
@@ -345,17 +338,6 @@
             timeout-ms = <30>;
         };
 
-        del2 {
-            bindings = <&kp DEL>;
-            key-positions = <23 22>;
-            timeout-ms = <30>;
-        };
-
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <3 2>;
-        };
-
         jinghaoo {
             bindings = <&kp HASH>;
             key-positions = <22 21>;
@@ -363,7 +345,14 @@
 
         kk1 {
             bindings = <&kp DOLLAR>;
-            key-positions = <13 12>;
+            key-positions = <12 11>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <11 10>;
+            timeout-ms = <20>;
+            layers = <0>;
         };
     };
 
