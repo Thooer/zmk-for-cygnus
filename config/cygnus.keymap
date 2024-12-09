@@ -356,16 +356,14 @@
             timeout-ms = <30>;
         };
 
-        jinghao {
-            bindings = <&kp POUND>;
-            key-positions = <11 13>;
-            timeout-ms = <20>;
-            layers = <0>;
-        };
-
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <3 2>;
+        };
+
+        jinghaoo {
+            bindings = <&kp HASH>;
+            key-positions = <12 11>;
         };
     };
 
