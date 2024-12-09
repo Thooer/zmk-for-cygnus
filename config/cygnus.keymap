@@ -357,7 +357,7 @@
         };
 
         jinghao {
-            bindings = <&kp HASH>;
+            bindings = <&kp POUND>;
             key-positions = <12 11>;
             timeout-ms = <20>;
             layers = <0>;
