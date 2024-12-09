@@ -172,14 +172,14 @@
 
         xigang {
             bindings = <&kp SLASH>;
-            key-positions = <28 18>;
+            key-positions = <15 25>;
             layers = <0>;
             timeout-ms = <10>;
         };
 
         fanxiegang {
             bindings = <&kp NON_US_BACKSLASH>;
-            key-positions = <21 11>;
+            key-positions = <14 24>;
             layers = <0>;
             timeout-ms = <10>;
         };
@@ -221,14 +221,14 @@
 
         quote {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <15 25>;
+            key-positions = <18 28>;
             layers = <0>;
             timeout-ms = <10>;
         };
 
         quote2 {
             bindings = <&kp SQT>;
-            key-positions = <14 24>;
+            key-positions = <11 21>;
             layers = <0>;
             timeout-ms = <10>;
         };
