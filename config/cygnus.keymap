@@ -296,13 +296,6 @@
             timeout-ms = <20>;
         };
 
-        kk1 {
-            bindings = <&kp DOLLAR>;
-            key-positions = <12 13>;
-            layers = <0>;
-            timeout-ms = <20>;
-        };
-
         kk3 {
             bindings = <&kp CARET>;
             key-positions = <2 1>;
@@ -319,14 +312,14 @@
 
         layer_exchange0 {
             bindings = <&layer_change 3 1>;
-            key-positions = <16 17 18>;
+            key-positions = <7 8 6>;
             timeout-ms = <30>;
             layers = <1 0>;
         };
 
         layer_exchange1 {
             bindings = <&layer_change 4 0>;
-            key-positions = <8 7 6>;
+            key-positions = <8 7 9>;
             timeout-ms = <30>;
             layers = <1 0>;
         };
@@ -366,6 +359,11 @@
         jinghaoo {
             bindings = <&kp HASH>;
             key-positions = <22 21>;
+        };
+
+        kk1 {
+            bindings = <&kp DOLLAR>;
+            key-positions = <13 12>;
         };
     };
 
