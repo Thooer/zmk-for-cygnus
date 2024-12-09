@@ -369,6 +369,13 @@
             timeout-ms = <20>;
             layers = <0>;
         };
+
+        jinghao2 {
+            bindings = <&kp HASH>;
+            key-positions = <11 13>;
+            timeout-ms = <20>;
+            layers = <0>;
+        };
     };
 
     behaviors {
