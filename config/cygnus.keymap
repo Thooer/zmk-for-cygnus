@@ -354,6 +354,11 @@
             timeout-ms = <20>;
             layers = <0>;
         };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <32 33>;
+        };
     };
 
     behaviors {
