@@ -67,14 +67,14 @@
 
         less_than {
             bindings = <&kp LESS_THAN>;
-            key-positions = <0 10>;
+            key-positions = <4 14>;
             layers = <0>;
             timeout-ms = <10>;
         };
 
         greater_than {
             bindings = <&kp GREATER_THAN>;
-            key-positions = <9 19>;
+            key-positions = <5 15>;
             layers = <0>;
             timeout-ms = <10>;
         };
@@ -214,21 +214,21 @@
 
         equal {
             bindings = <&kp EQUAL>;
-            key-positions = <16 18>;
+            key-positions = <16 17>;
             layers = <0>;
             timeout-ms = <20>;
         };
 
         quote {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <15 5>;
+            key-positions = <15 25>;
             layers = <0>;
             timeout-ms = <10>;
         };
 
         quote2 {
             bindings = <&kp SQT>;
-            key-positions = <14 4>;
+            key-positions = <14 24>;
             layers = <0>;
             timeout-ms = <10>;
         };
@@ -277,42 +277,42 @@
 
         k1 {
             bindings = <&kp EXCLAMATION>;
-            key-positions = <16 17>;
+            key-positions = <18 17>;
             layers = <0>;
             timeout-ms = <20>;
         };
 
         k2 {
             bindings = <&kp AT_SIGN>;
-            key-positions = <26 27>;
+            key-positions = <28 27>;
             layers = <0>;
             timeout-ms = <20>;
         };
 
         k3 {
             bindings = <&kp AMPERSAND>;
-            key-positions = <6 7>;
+            key-positions = <8 7>;
             layers = <0>;
             timeout-ms = <20>;
         };
 
         kk1 {
             bindings = <&kp DOLLAR>;
-            key-positions = <23 22>;
+            key-positions = <21 22>;
             layers = <0>;
             timeout-ms = <20>;
         };
 
         kk3 {
             bindings = <&kp CARET>;
-            key-positions = <3 2>;
+            key-positions = <1 2>;
             layers = <0>;
             timeout-ms = <20>;
         };
 
         jinghao {
             bindings = <&kp HASH>;
-            key-positions = <13 12>;
+            key-positions = <12 11>;
             layers = <0>;
             timeout-ms = <20>;
         };
@@ -365,7 +365,7 @@
 
         dian {
             bindings = <&kp GRAVE>;
-            key-positions = <13 11>;
+            key-positions = <13 12>;
             timeout-ms = <20>;
             layers = <0>;
         };
@@ -444,10 +444,10 @@
 
         ctrl {
             bindings = <
-&kp ESCAPE          &kp C_PREVIOUS                &kp C_VOLUME_UP            &kp C_BRIGHTNESS_INC  &kp ESCAPE  &kp INS           &kp HOME  &kp UP    &kp END    &kp PG_UP
-&kp CLCK            &kp C_NEXT                    &kp C_VOLUME_DOWN          &kp C_BRIGHTNESS_DEC  &kp CAPS    &kp PSCRN         &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
-&kp N1              &kp N2                        &kp N3                     &kp N4                &kp N5      &kp N6            &kp N7    &kp N8    &kp N9     &kp N0
-            &trans                  &kp LEFT_WIN                     &trans                        &trans      &none      &none
+&kp ESCAPE          &kp C_PREVIOUS                &kp C_VOLUME_UP            &kp C_BRIGHTNESS_INC  &kp GRAVE  &kp INS           &kp HOME  &kp UP    &kp END    &kp PG_UP
+&kp CLCK            &kp C_NEXT                    &kp C_VOLUME_DOWN          &kp C_BRIGHTNESS_DEC  &kp CAPS   &kp PSCRN         &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
+&kp N1              &kp N2                        &kp N3                     &kp N4                &kp N5     &kp N6            &kp N7    &kp N8    &kp N9     &kp N0
+            &trans                  &kp LEFT_WIN                     &trans                        &trans     &none      &none
             >;
         };
 
