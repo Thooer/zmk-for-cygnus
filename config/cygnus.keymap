@@ -319,13 +319,13 @@
 
         layer_exchange0 {
             bindings = <&layer_change 3 1>;
-            key-positions = <7 8 9>;
+            key-positions = <7 8 6>;
             timeout-ms = <30>;
         };
 
         layer_exchange1 {
             bindings = <&layer_change 4 0>;
-            key-positions = <0 1 2>;
+            key-positions = <1 2 3>;
             timeout-ms = <30>;
         };
 
