@@ -298,7 +298,7 @@
 
         kk1 {
             bindings = <&kp DOLLAR>;
-            key-positions = <22 21>;
+            key-positions = <12 11>;
             layers = <0>;
             timeout-ms = <20>;
         };
@@ -363,7 +363,7 @@
 
         jinghaoo {
             bindings = <&kp HASH>;
-            key-positions = <12 11>;
+            key-positions = <22 21>;
         };
     };
 
