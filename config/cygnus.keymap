@@ -298,8 +298,8 @@
 
         kk1 {
             bindings = <&kp DOLLAR>;
-            key-positions = <12 11>;
-            layers = <2>;
+            key-positions = <11 13>;
+            layers = <0>;
             timeout-ms = <20>;
         };
 
