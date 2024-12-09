@@ -165,7 +165,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <12 13>;
+            key-positions = <12 11>;
             layers = <0>;
             timeout-ms = <20>;
         };
@@ -298,7 +298,7 @@
 
         kk1 {
             bindings = <&kp DOLLAR>;
-            key-positions = <11 13>;
+            key-positions = <12 13>;
             layers = <0>;
             timeout-ms = <20>;
         };
@@ -319,7 +319,7 @@
 
         layer_exchange0 {
             bindings = <&layer_change 3 1>;
-            key-positions = <1 2 3>;
+            key-positions = <16 17 18>;
             timeout-ms = <30>;
             layers = <1 0>;
         };
