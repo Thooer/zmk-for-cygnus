@@ -310,13 +310,6 @@
             timeout-ms = <20>;
         };
 
-        jinghao {
-            bindings = <&kp HASH>;
-            key-positions = <11 13>;
-            layers = <0>;
-            timeout-ms = <20>;
-        };
-
         G_win {
             bindings = <&kp LEFT_WIN>;
             key-positions = <32 30>;
@@ -359,13 +352,20 @@
 
         del2 {
             bindings = <&kp DEL>;
-            key-positions = <32 33>;
+            key-positions = <18 17>;
             timeout-ms = <30>;
         };
 
         dian {
             bindings = <&kp GRAVE>;
             key-positions = <13 12>;
+            timeout-ms = <20>;
+            layers = <0>;
+        };
+
+        jinghao {
+            bindings = <&kp HASH>;
+            key-positions = <11 13>;
             timeout-ms = <20>;
             layers = <0>;
         };
