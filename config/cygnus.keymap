@@ -299,7 +299,7 @@
         kk1 {
             bindings = <&kp DOLLAR>;
             key-positions = <12 11>;
-            layers = <0>;
+            layers = <2>;
             timeout-ms = <20>;
         };
 
