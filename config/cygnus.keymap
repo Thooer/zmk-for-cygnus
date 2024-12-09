@@ -277,35 +277,35 @@
 
         k1 {
             bindings = <&kp EXCLAMATION>;
-            key-positions = <12 11>;
+            key-positions = <18 17>;
             layers = <0>;
             timeout-ms = <20>;
         };
 
         k2 {
             bindings = <&kp AT_SIGN>;
-            key-positions = <22 21>;
+            key-positions = <28 27>;
             layers = <0>;
             timeout-ms = <20>;
         };
 
         k3 {
             bindings = <&kp AMPERSAND>;
-            key-positions = <2 1>;
+            key-positions = <8 7>;
             layers = <0>;
             timeout-ms = <20>;
         };
 
         kk1 {
             bindings = <&kp DOLLAR>;
-            key-positions = <28 27>;
+            key-positions = <22 21>;
             layers = <0>;
             timeout-ms = <20>;
         };
 
         kk3 {
             bindings = <&kp CARET>;
-            key-positions = <8 7>;
+            key-positions = <2 1>;
             layers = <0>;
             timeout-ms = <20>;
         };
@@ -358,7 +358,7 @@
 
         jinghao {
             bindings = <&kp POUND>;
-            key-positions = <17 18>;
+            key-positions = <11 13>;
             timeout-ms = <20>;
             layers = <0>;
         };
