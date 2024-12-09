@@ -319,14 +319,16 @@
 
         layer_exchange0 {
             bindings = <&layer_change 3 1>;
-            key-positions = <7 8 6>;
+            key-positions = <1 2 3>;
             timeout-ms = <30>;
+            layers = <1 0>;
         };
 
         layer_exchange1 {
             bindings = <&layer_change 4 0>;
-            key-positions = <1 2 3>;
+            key-positions = <8 7 6>;
             timeout-ms = <30>;
+            layers = <1 0>;
         };
 
         G_T {
@@ -375,8 +377,6 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <180>;
-            require-prior-idle-ms = <0>;
         };
     };
 
