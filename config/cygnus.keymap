@@ -350,7 +350,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <13 12>;
+            key-positions = <23 22>;
             timeout-ms = <20>;
             layers = <0>;
         };
@@ -358,6 +358,11 @@
         delete {
             bindings = <&kp DELETE>;
             key-positions = <32 33>;
+        };
+
+        entere {
+            bindings = <&kp ENTER>;
+            key-positions = <26 27>;
         };
     };
 
