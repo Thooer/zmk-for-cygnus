@@ -427,12 +427,12 @@
             >;
         };
 
-        CodeCtrlNum {
+        CtrlNum {
             bindings = <
 &kp ESCAPE          &kp C_PREVIOUS                &kp C_VOLUME_UP            &kp C_BRIGHTNESS_INC  &kp GRAVE  &kp INS            &kp HOME  &kp UP    &kp END    &kp PG_UP
 &kp CLCK            &kp C_NEXT                    &kp C_VOLUME_DOWN          &kp C_BRIGHTNESS_DEC  &kp TILDE  &kp PSCRN          &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
 &kp N1              &kp N2                        &kp N3                     &kp N4                &kp N5     &kp N6             &kp N7    &kp N8    &kp N9     &kp N0
-            &trans                  &kp LEFT_WIN                     &trans                        &trans     &none      &trans
+            &trans                  &kp LEFT_WIN                     &trans                        &none      &none      &trans
             >;
         };
 
@@ -459,7 +459,7 @@
 &kp TAB                       &kp Q         &kp W             &kp E  &kp R  &none             &none  &none  &none  &none
 &kp LEFT_SHIFT                &kp A         &kp S             &kp D  &kp F  &none             &none  &none  &none  &none
 &kp LCTRL                     &kp Z         &kp X             &kp C  &kp V  &none             &none  &none  &none  &none
-                &kp LEFT_ALT         &mo 5         &kp SPACE         &mo 6  &mo 7  &mkp MCLK
+                &kp LEFT_ALT         &mo 5         &kp SPACE         &mo 0  &mo 1  &mkp MCLK
             >;
         };
 
@@ -469,24 +469,6 @@
 &kp CAPS         &trans          &trans          &trans  &kp G  &trans         &trans  &trans  &trans  &trans
 &trans           &trans          &trans          &trans  &kp B  &trans         &trans  &trans  &trans  &trans
           &none          &trans          &trans          &none  &none   &none
-            >;
-        };
-
-        GameToLetter {
-            bindings = <
-&kp Q             &kp W             &kp E             &kp R  &kp T     &kp Y                &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S             &kp D             &kp F  &kp G     &kp H                &kp J  &kp K      &kp L    &kp RET
-&kp Z             &kp X             &kp C             &kp V  &kp B     &kp N                &kp M  &kp COMMA  &kp DOT  &kp SEMI
-       &kp LSHFT         &kp SPACE         &kp LCTRL         &kp BSPC  &none  &kp LEFT_ALT
-            >;
-        };
-
-        GameToNum {
-            bindings = <
-&kp ESCAPE          &kp C_PREVIOUS                &kp C_VOLUME_UP            &kp C_BRIGHTNESS_INC  &kp GRAVE  &kp INS            &kp HOME  &kp UP    &kp END    &kp PG_UP
-&kp CLCK            &kp C_NEXT                    &kp C_VOLUME_DOWN          &kp C_BRIGHTNESS_DEC  &kp TILDE  &kp PSCRN          &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
-&kp N1              &kp N2                        &kp N3                     &kp N4                &kp N5     &kp N6             &kp N7    &kp N8    &kp N9     &kp N0
-            &trans                  &kp LEFT_WIN                     &trans                        &none      &none      &trans
             >;
         };
     };
