@@ -427,19 +427,19 @@
 
         GameMain {
             bindings = <
-&kp TAB                &kp Q                &kp W             &kp E  &kp R                     &none                 &none  &none  &none  &none
-&kp LEFT_SHIFT         &kp A                &kp S             &kp D  &kp F                     &none                 &none  &none  &none  &none
-&kp LCTRL              &kp Z                &kp X             &kp C  &kp V                     &none                 &none  &none  &none  &none
-                &mo 4         &kp LEFT_ALT         &kp SPACE         &holdmotapkp 5 BACKSPACE  &mo 6  &kp BACKSPACE
+&kp TAB                &kp Q                &kp W             &kp E  &kp R          &none         &none  &none  &none  &none
+&kp LEFT_SHIFT         &kp A                &kp S             &kp D  &kp F          &none         &none  &none  &none  &none
+&kp LCTRL              &kp Z                &kp X             &kp C  &kp V          &none         &none  &none  &none  &none
+                &mo 4         &kp LEFT_ALT         &kp SPACE         &kp BACKSPACE  &mo 6  &mo 5
             >;
         };
 
         GameCtrl {
             bindings = <
-&kp ESC               &trans          &trans          &trans  &kp T          &trans          &trans  &trans  &trans  &trans
-&kp CAPS              &trans          &trans          &trans  &kp G          &trans          &trans  &trans  &trans  &trans
-&kp LEFT_WIN          &trans          &trans          &trans  &kp B          &trans          &trans  &trans  &trans  &trans
-              &trans          &trans          &trans          &kp BACKSPACE  &trans  &trans
+&kp ESC               &trans          &trans          &trans  &kp T  &trans          &trans  &trans  &trans  &trans
+&kp CAPS              &trans          &trans          &trans  &kp G  &trans          &trans  &trans  &trans  &trans
+&kp LEFT_WIN          &trans          &trans          &trans  &kp B  &trans          &trans  &trans  &trans  &trans
+              &trans          &trans          &trans          &none  &trans  &trans
             >;
         };
 
