@@ -332,9 +332,14 @@
         };
 
         toGame {
-            bindings = <&layer_change 2 4>;
+            bindings = <&to 3>;
             key-positions = <8 7 6>;
             layers = <0>;
+        };
+
+        tobt {
+            bindings = <&mo 2>;
+            key-positions = <9 8 7>;
         };
     };
 
