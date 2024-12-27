@@ -4,10 +4,11 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &mt {
     tapping-term-ms = <200>;
@@ -229,35 +230,35 @@
         game-num1 {
             bindings = <&kp NUMBER_1>;
             key-positions = <0 10>;
-            layers = <1>;
+            layers = <4>;
             timeout-ms = <10>;
         };
 
         game-num2 {
             bindings = <&kp NUMBER_2>;
             key-positions = <1 11>;
-            layers = <1>;
+            layers = <4>;
             timeout-ms = <10>;
         };
 
         game-num3 {
             bindings = <&kp NUMBER_3>;
             key-positions = <12 2>;
-            layers = <1>;
+            layers = <4>;
             timeout-ms = <10>;
         };
 
         game-num4 {
             bindings = <&kp NUMBER_4>;
             key-positions = <3 13>;
-            layers = <1>;
+            layers = <4>;
             timeout-ms = <10>;
         };
 
         game-num5 {
             bindings = <&kp N5>;
             key-positions = <4 14>;
-            layers = <1>;
+            layers = <4>;
             timeout-ms = <10>;
         };
 
@@ -296,45 +297,38 @@
             timeout-ms = <20>;
         };
 
-        G_win {
-            bindings = <&kp LEFT_WIN>;
-            key-positions = <32 30>;
-            layers = <1>;
-            timeout-ms = <30>;
-        };
-
         layer_exchange0 {
-            bindings = <&layer_change 3 1>;
+            bindings = <&layer_change 2 2>;
             key-positions = <7 8 6>;
             timeout-ms = <30>;
-            layers = <1 0>;
+            layers = <2 0>;
         };
 
         layer_exchange1 {
-            bindings = <&layer_change 4 0>;
+            bindings = <&layer_change 3 0>;
             key-positions = <8 7 9>;
             timeout-ms = <30>;
-            layers = <1 0>;
+            layers = <2 0>;
         };
 
         G_T {
             bindings = <&kp T>;
             key-positions = <30 4>;
-            layers = <1>;
+            layers = <2>;
             timeout-ms = <30>;
         };
 
         G_G {
             bindings = <&kp G>;
             key-positions = <14 30>;
-            layers = <1>;
+            layers = <2>;
             timeout-ms = <30>;
         };
 
         G_B {
             bindings = <&kp B>;
             key-positions = <24 30>;
-            layers = <1>;
+            layers = <2>;
             timeout-ms = <30>;
         };
 
@@ -417,7 +411,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        CodeMain {
             bindings = <
 &kp Q                  &kp W             &kp E             &kp R  &kp T          &kp Y                &kp U  &kp I      &kp O       &kp P
 &kp A                  &kp S             &kp D             &kp F  &kp G          &kp H                &kp J  &kp K      &kp L       &kp ENTER
@@ -426,21 +420,12 @@
             >;
         };
 
-        game_layer {
+        CodeCtrlNum {
             bindings = <
-&kp TAB                     &kp Q                &kp W             &kp E  &kp R      &kp T                 &none     &kp UP_ARROW  &none      &none
-&kp LEFT_SHIFT              &kp A                &kp S             &kp D  &kp F      &kp G                 &kp LEFT  &kp DOWN      &kp RIGHT  &none
-&kp LCTRL                   &kp Z                &kp X             &kp C  &kp V      &kp N1                &kp N2    &kp N3        &kp N4     &kp N5
-                &kp ESCAPE         &kp LEFT_ALT         &kp SPACE         &mkp LCLK  &mkp RCLK  &mkp MCLK
-            >;
-        };
-
-        ctrl {
-            bindings = <
-&kp ESCAPE          &kp C_PREVIOUS                &kp C_VOLUME_UP            &kp C_BRIGHTNESS_INC  &kp GRAVE  &kp INS           &kp HOME  &kp UP    &kp END    &kp PG_UP
-&kp CLCK            &kp C_NEXT                    &kp C_VOLUME_DOWN          &kp C_BRIGHTNESS_DEC  &kp TILDE  &kp PSCRN         &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
-&kp N1              &kp N2                        &kp N3                     &kp N4                &kp N5     &kp N6            &kp N7    &kp N8    &kp N9     &kp N0
-            &trans                  &kp LEFT_WIN                     &trans                        &trans     &none      &none
+&kp ESCAPE          &kp C_PREVIOUS                &kp C_VOLUME_UP            &kp C_BRIGHTNESS_INC  &kp GRAVE  &kp INS            &kp HOME  &kp UP    &kp END    &kp PG_UP
+&kp CLCK            &kp C_NEXT                    &kp C_VOLUME_DOWN          &kp C_BRIGHTNESS_DEC  &kp TILDE  &kp PSCRN          &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
+&kp N1              &kp N2                        &kp N3                     &kp N4                &kp N5     &kp N6             &kp N7    &kp N8    &kp N9     &kp N0
+            &trans                  &kp LEFT_WIN                     &trans                        &trans     &none      &trans
             >;
         };
 
@@ -459,6 +444,42 @@
 &none                  &none                   &none          &none  &none      &none          &none  &none  &none  &none
 &none                  &none                   &none          &none  &none      &none          &none  &none  &none  &none
        &S_19511681072         &S_2574470183zZ         &S_ALL         &S_758216  &email  &none
+            >;
+        };
+
+        GameMain {
+            bindings = <
+&kp TAB                       &kp Q         &kp W             &kp E  &kp R  &none             &none  &none  &none  &none
+&kp LEFT_SHIFT                &kp A         &kp S             &kp D  &kp F  &none             &none  &none  &none  &none
+&kp LCTRL                     &kp Z         &kp X             &kp C  &kp V  &none             &none  &none  &none  &none
+                &kp LEFT_ALT         &mo 5         &kp SPACE         &mo 6  &mo 7  &mkp MCLK
+            >;
+        };
+
+        GameCtrl {
+            bindings = <
+&kp ESC          &trans          &trans          &trans  &kp T  &trans         &trans  &trans  &trans  &trans
+&kp CAPS         &trans          &trans          &trans  &kp G  &trans         &trans  &trans  &trans  &trans
+&trans           &trans          &trans          &trans  &kp B  &trans         &trans  &trans  &trans  &trans
+          &none          &trans          &trans          &none  &none   &none
+            >;
+        };
+
+        GameToLetter {
+            bindings = <
+&kp Q             &kp W             &kp E             &kp R  &kp T     &kp Y                &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S             &kp D             &kp F  &kp G     &kp H                &kp J  &kp K      &kp L    &kp RET
+&kp Z             &kp X             &kp C             &kp V  &kp B     &kp N                &kp M  &kp COMMA  &kp DOT  &kp SEMI
+       &kp LSHFT         &kp SPACE         &kp LCTRL         &kp BSPC  &none  &kp LEFT_ALT
+            >;
+        };
+
+        GameToNum {
+            bindings = <
+&kp ESCAPE          &kp C_PREVIOUS                &kp C_VOLUME_UP            &kp C_BRIGHTNESS_INC  &kp GRAVE  &kp INS            &kp HOME  &kp UP    &kp END    &kp PG_UP
+&kp CLCK            &kp C_NEXT                    &kp C_VOLUME_DOWN          &kp C_BRIGHTNESS_DEC  &kp TILDE  &kp PSCRN          &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
+&kp N1              &kp N2                        &kp N3                     &kp N4                &kp N5     &kp N6             &kp N7    &kp N8    &kp N9     &kp N0
+            &trans                  &kp LEFT_WIN                     &trans                        &none      &none      &trans
             >;
         };
     };
