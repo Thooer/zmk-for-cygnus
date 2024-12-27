@@ -82,84 +82,84 @@
         f1 {
             bindings = <&kp F1>;
             key-positions = <0 10>;
-            layers = <2>;
+            layers = <0>;
             timeout-ms = <10>;
         };
 
         f2 {
             bindings = <&kp F2>;
             key-positions = <1 11>;
-            layers = <2>;
+            layers = <0>;
             timeout-ms = <10>;
         };
 
         f3 {
             bindings = <&kp F3>;
             key-positions = <2 12>;
-            layers = <2>;
+            layers = <0>;
             timeout-ms = <10>;
         };
 
         f4 {
             bindings = <&kp F4>;
             key-positions = <3 13>;
-            layers = <2>;
+            layers = <0>;
             timeout-ms = <10>;
         };
 
         f5 {
             bindings = <&kp F5>;
             key-positions = <4 14>;
-            layers = <2>;
+            layers = <0>;
             timeout-ms = <10>;
         };
 
         f6 {
             bindings = <&kp F6>;
             key-positions = <5 15>;
-            layers = <2>;
+            layers = <0>;
             timeout-ms = <10>;
         };
 
         f7 {
             bindings = <&kp F7>;
             key-positions = <6 16>;
-            layers = <2>;
+            layers = <0>;
             timeout-ms = <10>;
         };
 
         f8 {
             bindings = <&kp F8>;
             key-positions = <7 17>;
-            layers = <2>;
+            layers = <0>;
             timeout-ms = <10>;
         };
 
         f9 {
             bindings = <&kp F9>;
             key-positions = <8 18>;
-            layers = <2>;
+            layers = <0>;
             timeout-ms = <10>;
         };
 
         f10 {
             bindings = <&kp F10>;
             key-positions = <9 19>;
-            layers = <2>;
+            layers = <0>;
             timeout-ms = <10>;
         };
 
         f11 {
             bindings = <&kp F11>;
             key-positions = <3 14>;
-            layers = <2>;
+            layers = <0>;
             timeout-ms = <20>;
         };
 
         f12 {
             bindings = <&kp F12>;
             key-positions = <6 15>;
-            layers = <2>;
+            layers = <0>;
             timeout-ms = <20>;
         };
 
@@ -187,7 +187,7 @@
         sub {
             bindings = <&kp MINUS>;
             key-positions = <26 16>;
-            layers = <0 2>;
+            layers = <0>;
             timeout-ms = <10>;
         };
 
@@ -296,21 +296,16 @@
             timeout-ms = <20>;
         };
 
-        toBTQuick {
-            bindings = <&to 2>;
-            key-positions = <18 17 16>;
-            timeout-ms = <30>;
-            layers = <2 0>;
-        };
-
         jinghaoo {
             bindings = <&kp HASH>;
             key-positions = <22 21>;
+            layers = <0>;
         };
 
         kk1 {
             bindings = <&kp DOLLAR>;
             key-positions = <12 11>;
+            layers = <0>;
         };
 
         tab {
@@ -432,10 +427,10 @@
 
         GameMain {
             bindings = <
-&kp TAB                &kp Q                &kp W             &kp E  &kp R                     &none                 &none  &none  &none  &none
-&kp LEFT_SHIFT         &kp A                &kp S             &kp D  &kp F                     &none                 &none  &none  &none  &none
-&kp LCTRL              &kp Z                &kp X             &kp C  &kp V                     &none                 &none  &none  &none  &none
-                &mo 4         &kp LEFT_ALT         &kp SPACE         &holdmotapkp 5 BACKSPACE  &mo 6  &kp BACKSPACE
+&kp TAB                &kp Q                &kp W             &kp E  &kp R  &none                 &none  &none  &none  &none
+&kp LEFT_SHIFT         &kp A                &kp S             &kp D  &kp F  &none                 &none  &none  &none  &none
+&kp LCTRL              &kp Z                &kp X             &kp C  &kp V  &none                 &none  &none  &none  &none
+                &mo 4         &kp LEFT_ALT         &kp SPACE         &mo 0  &mo 1  &kp BACKSPACE
             >;
         };
 
@@ -445,24 +440,6 @@
 &kp CAPS              &trans          &trans          &trans  &kp G          &trans          &trans  &trans  &trans  &trans
 &kp LEFT_WIN          &trans          &trans          &trans  &kp B          &trans          &trans  &trans  &trans  &trans
               &trans          &trans          &trans          &kp BACKSPACE  &trans  &trans
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-&kp Q                  &kp W             &kp E             &kp R  &kp T          &kp Y                &kp U  &kp I      &kp O       &kp P
-&kp A                  &kp S             &kp D             &kp F  &kp G          &kp H                &kp J  &kp K      &kp L       &kp ENTER
-&kp Z                  &kp X             &kp C             &kp V  &kp B          &kp N                &kp M  &kp COMMA  &kp PERIOD  &kp SEMICOLON
-       &kp LEFT_SHIFT         &kp SPACE         &kp LCTRL         &kp BACKSPACE  &none  &kp LEFT_ALT
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&kp ESCAPE          &kp C_PREVIOUS                &kp C_VOLUME_UP            &kp C_BRIGHTNESS_INC  &kp GRAVE  &kp INS            &kp HOME  &kp UP    &kp END    &kp PG_UP
-&kp CLCK            &kp C_NEXT                    &kp C_VOLUME_DOWN          &kp C_BRIGHTNESS_DEC  &kp TILDE  &kp PSCRN          &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
-&kp N1              &kp N2                        &kp N3                     &kp N4                &kp N5     &kp N6             &kp N7    &kp N8    &kp N9     &kp N0
-            &trans                  &kp LEFT_WIN                     &trans                        &none      &none      &trans
             >;
         };
     };
