@@ -337,9 +337,9 @@
             layers = <0>;
         };
 
-        tobt {
+        bt {
             bindings = <&mo 2>;
-            key-positions = <9 8 7>;
+            key-positions = <0 9>;
         };
     };
 
@@ -432,10 +432,10 @@
 
         GameMain {
             bindings = <
-&kp TAB                &kp Q                 &kp W             &kp E  &kp R                     &none                 &none  &none  &none  &none
-&kp LEFT_SHIFT         &kp A                 &kp S             &kp D  &kp F                     &none                 &none  &none  &none  &none
-&kp LCTRL              &kp Z                 &kp X             &kp C  &kp V                     &none                 &none  &none  &none  &none
-                &mo 4         &kp ALT_ERASE         &kp SPACE         &holdmotapkp 0 BACKSPACE  &mo 1  &kp BACKSPACE
+&kp TAB                &kp Q                 &kp W             &kp E  &kp R  &none                 &none  &none  &none  &none
+&kp LEFT_SHIFT         &kp A                 &kp S             &kp D  &kp F  &none                 &none  &none  &none  &none
+&kp LCTRL              &kp Z                 &kp X             &kp C  &kp V  &none                 &none  &none  &none  &none
+                &mo 4         &kp ALT_ERASE         &kp SPACE         &mo 0  &mo 1  &kp BACKSPACE
             >;
         };
 
