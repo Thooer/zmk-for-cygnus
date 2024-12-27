@@ -82,84 +82,84 @@
         f1 {
             bindings = <&kp F1>;
             key-positions = <0 10>;
-            layers = <0>;
+            layers = <1>;
             timeout-ms = <10>;
         };
 
         f2 {
             bindings = <&kp F2>;
             key-positions = <1 11>;
-            layers = <0>;
+            layers = <1>;
             timeout-ms = <10>;
         };
 
         f3 {
             bindings = <&kp F3>;
             key-positions = <2 12>;
-            layers = <0>;
+            layers = <1>;
             timeout-ms = <10>;
         };
 
         f4 {
             bindings = <&kp F4>;
             key-positions = <3 13>;
-            layers = <0>;
+            layers = <1>;
             timeout-ms = <10>;
         };
 
         f5 {
             bindings = <&kp F5>;
             key-positions = <4 14>;
-            layers = <0>;
+            layers = <1>;
             timeout-ms = <10>;
         };
 
         f6 {
             bindings = <&kp F6>;
             key-positions = <5 15>;
-            layers = <0>;
+            layers = <1>;
             timeout-ms = <10>;
         };
 
         f7 {
             bindings = <&kp F7>;
             key-positions = <6 16>;
-            layers = <0>;
+            layers = <1>;
             timeout-ms = <10>;
         };
 
         f8 {
             bindings = <&kp F8>;
             key-positions = <7 17>;
-            layers = <0>;
+            layers = <1>;
             timeout-ms = <10>;
         };
 
         f9 {
             bindings = <&kp F9>;
             key-positions = <8 18>;
-            layers = <0>;
+            layers = <1>;
             timeout-ms = <10>;
         };
 
         f10 {
             bindings = <&kp F10>;
             key-positions = <9 19>;
-            layers = <0>;
+            layers = <1>;
             timeout-ms = <10>;
         };
 
         f11 {
             bindings = <&kp F11>;
             key-positions = <3 14>;
-            layers = <0>;
+            layers = <1>;
             timeout-ms = <20>;
         };
 
         f12 {
             bindings = <&kp F12>;
             key-positions = <6 15>;
-            layers = <0>;
+            layers = <1>;
             timeout-ms = <20>;
         };
 
