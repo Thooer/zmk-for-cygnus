@@ -297,16 +297,16 @@
             timeout-ms = <20>;
         };
 
-        layer_exchange0 {
-            bindings = <&layer_change 2 2>;
-            key-positions = <7 8 6>;
+        toBT {
+            bindings = <&to 2>;
+            key-positions = <18 17 16>;
             timeout-ms = <30>;
             layers = <2 0>;
         };
 
-        layer_exchange1 {
-            bindings = <&layer_change 3 0>;
-            key-positions = <8 7 9>;
+        toQuick {
+            bindings = <&to 3>;
+            key-positions = <28 27 26>;
             timeout-ms = <30>;
             layers = <2 0>;
         };
@@ -354,9 +354,16 @@
             key-positions = <32 33>;
         };
 
-        entere {
-            bindings = <&kp ENTER>;
-            key-positions = <26 27>;
+        toDefault {
+            bindings = <&to 0>;
+            key-positions = <8 7 6>;
+            layers = <4>;
+        };
+
+        toGame {
+            bindings = <&to 4>;
+            key-positions = <8 7 6>;
+            layers = <0>;
         };
     };
 
