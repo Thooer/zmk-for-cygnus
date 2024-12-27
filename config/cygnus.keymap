@@ -436,10 +436,10 @@
 
         GameCtrl {
             bindings = <
-&kp ESC           &trans          &trans          &trans  &kp T   &trans          &trans  &trans  &trans  &trans
-&kp CAPS          &trans          &trans          &trans  &kp G   &trans          &trans  &trans  &trans  &trans
-&trans            &trans          &trans          &trans  &kp B   &trans          &trans  &trans  &trans  &trans
-          &trans          &trans          &trans          &trans  &trans  &trans
+&kp ESC               &trans          &trans          &trans  &kp T   &trans          &trans  &trans  &trans  &trans
+&kp CAPS              &trans          &trans          &trans  &kp G   &trans          &trans  &trans  &trans  &trans
+&kp LEFT_WIN          &trans          &trans          &trans  &kp B   &trans          &trans  &trans  &trans  &trans
+              &trans          &trans          &trans          &trans  &trans  &trans
             >;
         };
     };
