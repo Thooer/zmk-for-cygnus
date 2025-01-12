@@ -82,6 +82,7 @@
             quick-tap-ms = <180>;
             global-quick-tap;
         };
+
         ltq: ltq {
             compatible = "zmk,behavior-hold-tap";
             label = "LTQ";
@@ -141,33 +142,6 @@
 &bt BT_CLR            &trans                &trans                &trans        &trans        &trans          &trans  &trans  &trans  &trans
 &trans                &trans                &trans                &trans        &trans        &trans          &trans  &trans  &trans  &trans
               &trans                &trans                &trans                &trans        &trans  &trans
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-&trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
-&trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
-&trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
-        &trans          &trans          &trans          &trans  &trans  &trans
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
-&trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
-&trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
-        &trans          &trans          &trans          &trans  &trans  &trans
-            >;
-        };
-
-        layer_7 {
-            bindings = <
-&trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
-&trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
-&trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
-        &trans          &trans          &trans          &trans  &trans  &trans
             >;
         };
     };
