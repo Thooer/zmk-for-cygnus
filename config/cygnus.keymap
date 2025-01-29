@@ -188,10 +188,72 @@
             bindings = <&mo 4>;
             key-positions = <19 29>;
         };
+
+        tos {
+            bindings = <&toAllS>;
+            key-positions = <34 12>;
+        };
+
+        toAllhead {
+            bindings = <&toAllHead>;
+            key-positions = <34 1>;
+        };
+
+        toAllback {
+            bindings = <&toAllBack>;
+            key-positions = <34 3>;
+        };
+
+        tohead {
+            bindings = <&tohead>;
+            key-positions = <34 11>;
+        };
+
+        toback {
+            bindings = <&toback>;
+            key-positions = <34 13>;
+        };
     };
 };
 
 / {
+    macros {
+        toAllHead: toHead {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA &kp COMMA &kp S &kp LEFT>;
+            label = "TOHEAD";
+        };
+
+        toAllBack: toBack {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA &kp COMMA &kp S &kp RIGHT>;
+            label = "TOBACK";
+        };
+
+        toAllS: toS {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA &kp COMMA &kp S>;
+            label = "TOS";
+        };
+
+        tohead: tohead {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA &kp COMMA &kp H>;
+            label = "TOHEAD";
+        };
+
+        toback: toback {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA &kp COMMA &kp L>;
+            label = "TOBACK";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
