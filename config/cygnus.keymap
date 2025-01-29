@@ -172,14 +172,14 @@
 
         DtoG {
             bindings = <&to 2>;
-            key-positions = <3 1 2>;
+            key-positions = <18 17 16>;
             layers = <0>;
             timeout-ms = <20>;
         };
 
         GtoD {
             bindings = <&to 0>;
-            key-positions = <3 2 1>;
+            key-positions = <18 17 16>;
             timeout-ms = <20>;
             layers = <2>;
         };
