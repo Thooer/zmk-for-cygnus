@@ -186,7 +186,7 @@
 
         Ctrl {
             bindings = <&mo 4>;
-            key-positions = <18 17 16>;
+            key-positions = <19 29>;
         };
     };
 };
