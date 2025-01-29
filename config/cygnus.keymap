@@ -190,27 +190,27 @@
         };
 
         tos {
-            bindings = <&toAllS>;
+            bindings = <&MtoS>;
             key-positions = <34 12>;
         };
 
         CtoAh {
-            bindings = <&toAllHead>;
+            bindings = <&MtoAllHead>;
             key-positions = <34 1>;
         };
 
         CtoAb {
-            bindings = <&toAllBack>;
+            bindings = <&MtoAllBack>;
             key-positions = <34 3>;
         };
 
         Ctoh {
-            bindings = <&toh>;
+            bindings = <&MtoHead>;
             key-positions = <34 11>;
         };
 
         Ctob {
-            bindings = <&tob>;
+            bindings = <&MtoBack>;
             key-positions = <34 13>;
         };
     };
@@ -218,39 +218,39 @@
 
 / {
     macros {
-        toAllHead: toHead {
+        MtoAllHead: MtoAllHead {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COMMA &kp COMMA &kp S &kp LEFT>;
-            label = "TOHEAD";
+            bindings = <&kp COMMA &kp COMMA &kp S &kp LEFT_ARROW>;
+            label = "MTOALLHEAD";
         };
 
-        toAllBack: toBack {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp COMMA &kp COMMA &kp S &kp RIGHT>;
-            label = "TOBACK";
-        };
-
-        toAllS: toS {
+        MtoS: MtoS {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp COMMA &kp COMMA &kp S>;
-            label = "TOS";
+            label = "MTOS";
         };
 
-        toh: tohead {
+        MtoAllBack: MtoAllBack {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA &kp COMMA &kp S &kp RIGHT>;
+            label = "MTOALLBACK";
+        };
+
+        MtoHead: MtoHead {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp COMMA &kp COMMA &kp H>;
-            label = "TOHEAD";
+            label = "MTOHEAD";
         };
 
-        tob: toback {
+        MtoBack: MtoBack {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp COMMA &kp COMMA &kp L>;
-            label = "TOBACK";
+            label = "MTOBACK";
         };
     };
 
