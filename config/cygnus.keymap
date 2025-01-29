@@ -172,21 +172,21 @@
 
         DtoG {
             bindings = <&to 2>;
-            key-positions = <18 17 16>;
+            key-positions = <8 6 7>;
             layers = <0>;
             timeout-ms = <20>;
         };
 
         GtoD {
             bindings = <&to 0>;
-            key-positions = <18 17 16>;
+            key-positions = <8 7 6>;
             timeout-ms = <20>;
             layers = <2>;
         };
 
         Ctrl {
             bindings = <&mo 4>;
-            key-positions = <8 7 6>;
+            key-positions = <18 17 16>;
         };
     };
 };
