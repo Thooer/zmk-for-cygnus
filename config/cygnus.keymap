@@ -205,12 +205,12 @@
         };
 
         toh {
-            bindings = <&tohead>;
+            bindings = <&toh>;
             key-positions = <34 11>;
         };
 
         tob {
-            bindings = <&toback>;
+            bindings = <&tob>;
             key-positions = <34 13>;
         };
     };
@@ -239,14 +239,14 @@
             label = "TOS";
         };
 
-        tohead: tohead {
+        toh: tohead {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp COMMA &kp COMMA &kp H>;
             label = "TOHEAD";
         };
 
-        toback: toback {
+        tob: toback {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp COMMA &kp COMMA &kp L>;
