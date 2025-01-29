@@ -194,22 +194,22 @@
             key-positions = <34 12>;
         };
 
-        toAh {
+        CtoAh {
             bindings = <&toAllHead>;
             key-positions = <34 1>;
         };
 
-        toAb {
+        CtoAb {
             bindings = <&toAllBack>;
             key-positions = <34 3>;
         };
 
-        toh {
+        Ctoh {
             bindings = <&toh>;
             key-positions = <34 11>;
         };
 
-        tob {
+        Ctob {
             bindings = <&tob>;
             key-positions = <34 13>;
         };
