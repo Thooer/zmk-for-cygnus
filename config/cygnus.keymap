@@ -185,13 +185,11 @@
         };
 
         Ctrl {
-            bindings = <&mo 4>;
+            bindings = <&mo 3>;
             key-positions = <8 7 6>;
         };
     };
 };
-
-
 
 / {
     keymap {
@@ -221,15 +219,6 @@
 &kp TAB               &kp A         &kp S             &kp D  &kp F   &trans          &trans  &trans  &trans  &trans
 &kp LSHFT             &kp Z         &kp X             &kp C  &kp V   &trans          &trans  &trans  &trans  &trans
            &kp LCTRL         &mo 0         &kp SPACE         &trans  &trans  &trans
-            >;
-        };
-
-        GameCtrl {
-            bindings = <
-&trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
-&trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
-&trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
-        &trans          &trans          &trans          &trans  &trans  &trans
             >;
         };
 
