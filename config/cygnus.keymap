@@ -62,13 +62,13 @@
 
         s9 {
             bindings = <&kp SQT>;
-            key-positions = <24 14>;
+            key-positions = <11 21>;
             timeout-ms = <20>;
         };
 
         s10 {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <25 15>;
+            key-positions = <18 28>;
             timeout-ms = <20>;
         };
 
@@ -98,12 +98,12 @@
 
         s15 {
             bindings = <&kp NON_US_BACKSLASH>;
-            key-positions = <21 11>;
+            key-positions = <14 24>;
         };
 
         s16 {
             bindings = <&kp SLASH>;
-            key-positions = <28 18>;
+            key-positions = <15 25>;
             timeout-ms = <20>;
         };
 
