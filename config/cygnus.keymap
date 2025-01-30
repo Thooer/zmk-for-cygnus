@@ -122,6 +122,7 @@
         s17 {
             bindings = <&kp CARET>;
             key-positions = <2 1>;
+            timeout-ms = <20>;
         };
 
         s18 {
@@ -171,7 +172,7 @@
         };
 
         DtoG {
-            bindings = <&to 2>;
+            bindings = <&to 3>;
             key-positions = <8 6 7>;
             layers = <0>;
             timeout-ms = <20>;
@@ -181,37 +182,12 @@
             bindings = <&to 0>;
             key-positions = <8 7 6>;
             timeout-ms = <20>;
-            layers = <2>;
+            layers = <3>;
         };
 
-        Ctrl {
-            bindings = <&mo 4>;
-            key-positions = <19 29>;
-        };
-
-        tos {
-            bindings = <&MtoS>;
-            key-positions = <34 12>;
-        };
-
-        CtoAh {
-            bindings = <&MtoAllHead>;
-            key-positions = <34 1>;
-        };
-
-        CtoAb {
-            bindings = <&MtoAllBack>;
-            key-positions = <34 3>;
-        };
-
-        Ctoh {
-            bindings = <&MtoHead>;
-            key-positions = <34 11>;
-        };
-
-        Ctob {
-            bindings = <&MtoBack>;
-            key-positions = <34 13>;
+        empty {
+            bindings = <&kp SPACE>;
+            key-positions = <13 12>;
         };
     };
 };
@@ -252,6 +228,13 @@
             bindings = <&kp COMMA &kp COMMA &kp L>;
             label = "MTOBACK";
         };
+
+        MtoAllUp: MtoAllUp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA &kp COMMA &kp S &kp UP_ARROW>;
+            label = "MTOALLUP";
+        };
     };
 
     keymap {
@@ -259,10 +242,10 @@
 
         Default {
             bindings = <
-&kp Q             &kp W             &kp E             &kp R  &kp T     &kp Y            &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S             &kp D             &kp F  &kp G     &kp H            &kp J  &kp K      &kp L    &kp RET
-&kp Z             &kp X             &kp C             &kp V  &kp B     &kp N            &kp M  &kp COMMA  &kp DOT  &kp SEMI
-       &kp LSHFT         &kp SPACE         &kp LCTRL         &kp BSPC  &mo 1  &kp LALT
+&kp Q             &kp W         &kp E             &kp R  &kp T     &kp Y            &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D             &kp F  &kp G     &kp H            &kp J  &kp K      &kp L    &kp RET
+&kp Z             &kp X         &kp C             &kp V  &kp B     &kp N            &kp M  &kp COMMA  &kp DOT  &kp SEMI
+       &kp LSHFT         &mo 2         &kp LCTRL         &kp BSPC  &mo 1  &kp LALT
             >;
         };
 
@@ -275,12 +258,21 @@
             >;
         };
 
+        Ctrl {
+            bindings = <
+&kp INS              &kp C_BRIGHTNESS_INC         &kp C_VOLUME_UP         &kp C_PREVIOUS  &kp C_SLEEP   &bt BT_CLR_ALL         &MtoAllHead  &MtoAllUp  &MtoAllBack  &none
+&kp PSCRN            &kp C_BRIGHTNESS_DEC         &kp C_VOL_DN            &kp C_NEXT      &kp C_POWER   &none                  &MtoHead     &MtoS      &MtoBack     &none
+&bt BT_SEL 0         &bt BT_SEL 1                 &bt BT_SEL 2            &bt BT_SEL 3    &bt BT_SEL 4  &none                  &none        &none      &none        &none
+              &none                        &none                   &none                  &none         &none           &none
+            >;
+        };
+
         Game {
             bindings = <
-&kp ESC               &kp Q         &kp W             &kp E  &kp R   &trans          &trans  &trans  &trans  &trans
-&kp TAB               &kp A         &kp S             &kp D  &kp F   &trans          &trans  &trans  &trans  &trans
-&kp LSHFT             &kp Z         &kp X             &kp C  &kp V   &trans          &trans  &trans  &trans  &trans
-           &kp LCTRL         &mo 0         &kp SPACE         &trans  &trans  &trans
+&kp ESC               &kp Q         &kp W             &kp E  &kp R  &none         &none  &none  &none  &none
+&kp TAB               &kp A         &kp S             &kp D  &kp F  &none         &none  &none  &none  &none
+&kp LSHFT             &kp Z         &kp X             &kp C  &kp V  &none         &none  &none  &none  &none
+           &kp LCTRL         &mo 0         &kp SPACE         &none  &none  &none
             >;
         };
 
@@ -290,15 +282,6 @@
 &trans          &trans          &trans          &trans  &kp G   &kp H           &kp J  &kp K      &kp L    &kp ENTER
 &trans          &trans          &trans          &trans  &kp B   &kp N           &kp M  &kp COMMA  &kp DOT  &kp SEMI
         &trans          &trans          &trans          &trans  &trans  &trans
-            >;
-        };
-
-        Ctrl {
-            bindings = <
-&kp INS               &kp C_BRIGHTNESS_INC          &kp C_VOLUME_UP          &kp C_PREVIOUS  &kp C_SLEEP   &bt BT_CLR          &trans  &trans  &trans  &bt BT_CLR_ALL
-&kp PSCRN             &kp C_BRIGHTNESS_DEC          &kp C_VOL_DN             &kp C_NEXT      &kp C_POWER   &trans              &trans  &trans  &trans  &trans
-&bt BT_SEL 0          &bt BT_SEL 1                  &bt BT_SEL 2             &bt BT_SEL 3    &bt BT_SEL 4  &trans              &trans  &trans  &trans  &trans
-              &trans                        &trans                   &trans                  &trans        &trans      &trans
             >;
         };
     };
