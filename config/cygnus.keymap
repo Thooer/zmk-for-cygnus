@@ -194,6 +194,11 @@
             bindings = <&kp DEL>;
             key-positions = <32 33>;
         };
+
+        kk {
+            bindings = <&kp GRAVE>;
+            key-positions = <3 2>;
+        };
     };
 };
 
@@ -265,10 +270,10 @@
 
         Ctrl {
             bindings = <
-&kp INS              &kp C_BRIGHTNESS_INC         &kp C_VOLUME_UP         &kp C_PREVIOUS  &kp C_SLEEP   &bt BT_CLR_ALL         &MtoAllHead  &MtoAllUp  &MtoAllBack  &none
-&kp PSCRN            &kp C_BRIGHTNESS_DEC         &kp C_VOL_DN            &kp C_NEXT      &kp C_POWER   &none                  &MtoHead     &MtoS      &MtoBack     &none
-&bt BT_SEL 0         &bt BT_SEL 1                 &bt BT_SEL 2            &bt BT_SEL 3    &bt BT_SEL 4  &none                  &none        &none      &none        &none
-              &none                        &none                   &none                  &none         &none           &none
+&kp INS              &kp C_BRIGHTNESS_INC         &kp C_VOLUME_UP              &kp C_PREVIOUS  &kp C_SLEEP   &none         &MtoAllHead  &MtoAllUp  &MtoAllBack  &none
+&kp PSCRN            &kp C_BRIGHTNESS_DEC         &kp C_VOL_DN                 &kp C_NEXT      &kp C_POWER   &none         &MtoHead     &MtoS      &MtoBack     &none
+&bt BT_SEL 0         &bt BT_SEL 1                 &bt BT_SEL 2                 &bt BT_SEL 3    &bt BT_SEL 4  &none         &none        &none      &none        &none
+              &none                        &none                   &bt BT_CLR                  &none         &none  &none
             >;
         };
 
