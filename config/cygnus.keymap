@@ -202,42 +202,42 @@
         MtoAllHead: MtoAllHead {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COMMA &kp COMMA &kp S &kp LEFT_ARROW>;
+            bindings = <&kp ESCAPE &kp COMMA &kp COMMA &kp S &kp LEFT_ARROW>;
             label = "MTOALLHEAD";
         };
 
         MtoS: MtoS {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COMMA &kp COMMA &kp S>;
+            bindings = <&kp ESCAPE &kp COMMA &kp COMMA &kp S>;
             label = "MTOS";
         };
 
         MtoAllBack: MtoAllBack {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COMMA &kp COMMA &kp S &kp RIGHT>;
+            bindings = <&kp ESCAPE &kp COMMA &kp COMMA &kp S &kp RIGHT>;
             label = "MTOALLBACK";
         };
 
         MtoHead: MtoHead {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COMMA &kp COMMA &kp H>;
+            bindings = <&kp ESCAPE &kp COMMA &kp COMMA &kp H>;
             label = "MTOHEAD";
         };
 
         MtoBack: MtoBack {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COMMA &kp COMMA &kp L>;
+            bindings = <&kp ESCAPE &kp COMMA &kp COMMA &kp L>;
             label = "MTOBACK";
         };
 
         MtoAllUp: MtoAllUp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COMMA &kp COMMA &kp S &kp UP_ARROW>;
+            bindings = <&kp ESCAPE &kp COMMA &kp COMMA &kp S &kp UP_ARROW>;
             label = "MTOALLUP";
         };
     };
