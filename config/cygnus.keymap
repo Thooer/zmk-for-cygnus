@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 &mt {
@@ -101,10 +102,46 @@
 
         layer_0 {
             bindings = <
-&kp Q             &kp W          &kp E             &kp R  &kp T     &kp Y             &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S          &kp D             &kp F  &kp G     &kp H             &kp J  &kp K      &kp L    &kp RET
-&kp Z             &kp X          &kp C             &kp V  &kp B     &kp N             &kp M  &kp COMMA  &kp DOT  &kp SEMI
-       &kp LSHFT         &trans         &kp LCTRL         &kp BSPC  &trans  &kp LALT
+&kp Q             &kp W         &kp E             &kp R  &kp T     &kp Y            &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D             &kp F  &kp G     &kp H            &kp J  &kp K      &kp L    &kp RET
+&kp Z             &kp X         &kp C             &kp V  &kp B     &kp N            &kp M  &kp COMMA  &kp DOT  &kp SEMI
+       &kp LSHFT         &mo 2         &kp LCTRL         &kp BSPC  &mo 1  &kp LALT
+            >;
+        };
+
+        layer_1 {
+            bindings = <
+&kp F1          &kp F2            &kp F3          &kp F4  &kp F5   &kp F11          &trans    &kp UP    &trans     &kp ESC
+&kp F6          &kp F7            &kp F8          &kp F9  &kp F10  &kp F12          &kp LEFT  &kp DOWN  &kp RIGHT  &kp CAPS
+&kp N1          &kp N2            &kp N3          &kp N4  &kp N5   &kp N6           &kp N7    &kp N8    &kp N9     &kp N0
+        &trans          &kp LGUI          &trans          &trans   &none    &trans
+            >;
+        };
+
+        layer_2 {
+            bindings = <
+&kp INS               &kp C_BRIGHTNESS_INC          &kp C_VOLUME_UP                &kp K_PREVIOUS  &kp K_SLEEP   &trans          &trans                    &trans                    &trans                    &trans
+&kp PSCRN             &kp C_BRIGHTNESS_DEC          &kp C_VOLUME_DOWN              &kp K_NEXT      &kp K_POWER   &trans          &trans                    &trans                    &trans                    &trans
+&bt BT_SEL 0          &bt BT_SEL 1                  &bt BT_SEL 2                   &bt BT_SEL 3    &bt BT_SEL 4  &trans          &kp LS(LA(LC(NUMBER_1)))  &kp LA(LS(LC(NUMBER_2)))  &kp LS(LA(LC(NUMBER_3)))  &kp LS(LA(LC(NUMBER_4)))
+              &trans                        &trans                     &bt BT_CLR                  &trans        &trans  &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&kp ESC               &kp Q         &kp W             &kp E  &kp R   &kp Y           &kp U  &kp I      &kp O    &kp P
+&kp TAB               &kp A         &kp S             &kp D  &kp F   &kp H           &kp J  &kp K      &kp L    &kp RET
+&kp LSHFT             &kp Z         &kp X             &kp C  &kp V   &kp N           &kp M  &kp COMMA  &kp DOT  &kp SEMI
+           &kp LCTRL         &mo 4         &kp SPACE         &trans  &trans  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans          &trans          &trans          &trans  &kp T   &trans          &trans  &trans  &trans  &trans
+&trans          &trans          &trans          &trans  &kp G   &trans          &trans  &trans  &trans  &trans
+&trans          &trans          &trans          &trans  &kp B   &trans          &trans  &trans  &trans  &trans
+        &trans          &trans          &trans          &trans  &trans  &trans
             >;
         };
     };
