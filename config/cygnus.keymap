@@ -149,7 +149,7 @@
         };
 
         K19 {
-            bindings = <&kp LCTRL>;
+            bindings = <&kp CARET>;
             key-positions = <1 2>;
             timeout-ms = <30>;
             layers = <0>;
