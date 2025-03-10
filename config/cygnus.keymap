@@ -22,50 +22,222 @@
     combos {
         compatible = "zmk,combos";
 
-        left_bkt {
-            bindings = <&kp LBKT>;
-            key-positions = <3 2>;
-            timeout-ms = <50>;
-        };
-
-        right_bkt {
-            bindings = <&kp RBKT>;
-            key-positions = <6 7>;
-            timeout-ms = <50>;
-        };
-
-        left_par {
+        K1 {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <12 13>;
-            timeout-ms = <50>;
+            key-positions = <3 13>;
+            timeout-ms = <30>;
+            layers = <0>;
         };
 
-        right_par {
+        K2 {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <16 17>;
-            timeout-ms = <50>;
+            key-positions = <6 16>;
+            timeout-ms = <30>;
+            layers = <0>;
         };
 
-        left_brace {
+        K3 {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <2 12>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        K4 {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <7 17>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        K5 {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <14 13>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        K6 {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <16 15>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        K7 {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <23 22>;
-            timeout-ms = <50>;
+            key-positions = <4 14>;
+            timeout-ms = <30>;
+            layers = <0>;
         };
 
-        right_brace {
+        K8 {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <26 27>;
-            timeout-ms = <50>;
+            key-positions = <5 15>;
+            timeout-ms = <30>;
+            layers = <0>;
         };
 
-        bac {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <4 5>;
+        K9 {
+            bindings = <&kp SQT>;
+            key-positions = <24 23>;
+            timeout-ms = <30>;
+            layers = <0>;
         };
 
-        pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <14 15>;
+        K10 {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <26 25>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        K11 {
+            bindings = <&kp PLUS>;
+            key-positions = <23 13>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        K12 {
+            bindings = <&kp MINUS>;
+            key-positions = <26 16>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        K13 {
+            bindings = <&kp ASTERISK>;
+            key-positions = <22 12>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        K14 {
+            bindings = <&kp PERCENT>;
+            key-positions = <27 17>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        K15 {
+            bindings = <&kp NON_US_BACKSLASH>;
+            key-positions = <24 14>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        K16 {
+            bindings = <&kp SLASH>;
+            key-positions = <25 15>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        K17 {
+            bindings = <&kp TAB>;
+            key-positions = <23 22>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        K18 {
+            bindings = <&kp ENTER>;
+            key-positions = <17 16>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        K19 {
+            bindings = <&kp LCTRL>;
+            key-positions = <1 2>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        K20 {
+            bindings = <&kp HASH>;
+            key-positions = <11 12>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        K21 {
+            bindings = <&kp DOLLAR>;
+            key-positions = <22 21>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        K22 {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <8 7>;
+            layers = <0>;
+            timeout-ms = <30>;
+        };
+
+        K23 {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <18 17>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        K24 {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <28 27>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        K25 {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <31 34>;
+        };
+
+        K26 {
+            bindings = <&kp ESCAPE>;
+            key-positions = <27 26>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        K27 {
+            bindings = <&kp EQUAL>;
+            key-positions = <7 6>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        K28 {
+            bindings = <&to 3>;
+            key-positions = <8 7 6>;
+            layers = <0>;
+        };
+
+        K29 {
+            bindings = <&to 0>;
+            key-positions = <8 7 6>;
+            layers = <3>;
+        };
+
+        K30 {
+            bindings = <&kp SPACE>;
+            key-positions = <13 12>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        K31 {
+            bindings = <&kp DELETE>;
+            key-positions = <33 32>;
+        };
+
+        K32 {
+            bindings = <&kp GRAVE>;
+            key-positions = <3 2>;
+            timeout-ms = <30>;
+            layers = <0>;
         };
     };
 
