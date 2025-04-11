@@ -329,10 +329,10 @@
 
         layer_2 {
             bindings = <
-&kp INS               &kp C_BRIGHTNESS_INC          &kp C_VOLUME_UP           &kp K_PREVIOUS  &kp K_SLEEP   &trans             &trans                    &trans                    &trans                    &trans
-&kp PSCRN             &kp C_BRIGHTNESS_DEC          &kp C_VOLUME_DOWN         &kp K_NEXT      &kp K_POWER   &zhanghao          &phonenumber              &mima                     &pinnumber                &noticeword
-&bt BT_SEL 0          &bt BT_SEL 1                  &bt BT_SEL 2              &bt BT_SEL 3    &bt BT_SEL 4  &trans             &kp LS(LA(LC(NUMBER_1)))  &kp LA(LS(LC(NUMBER_2)))  &kp LS(LA(LC(NUMBER_3)))  &kp LS(LA(LC(NUMBER_4)))
-              &trans                        &trans                     &none                  &bt BT_CLR    &trans     &trans
+&kp INS               &kp C_BRIGHTNESS_INC          &kp C_VOLUME_UP            &kp K_PREVIOUS  &kp K_SLEEP   &trans             &trans                    &trans                    &trans                    &trans
+&kp PSCRN             &kp C_BRIGHTNESS_DEC          &kp C_VOLUME_DOWN          &kp K_NEXT      &kp K_POWER   &zhanghao          &phonenumber              &mima                     &pinnumber                &noticeword
+&bt BT_SEL 0          &bt BT_SEL 1                  &bt BT_SEL 2               &bt BT_SEL 3    &bt BT_SEL 4  &trans             &kp LS(LA(LC(NUMBER_1)))  &kp LA(LS(LC(NUMBER_2)))  &kp LS(LA(LC(NUMBER_3)))  &kp LS(LA(LC(NUMBER_4)))
+              &trans                        &trans                     &trans                  &bt BT_CLR    &trans     &trans
             >;
         };
 
