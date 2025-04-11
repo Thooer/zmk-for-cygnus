@@ -269,6 +269,43 @@
         };
     };
 
+    macros {
+        zhanghao: zhanghao {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N2 &kp N5 &kp N7 &kp N4 &kp N4 &kp N7 &kp N0 &kp N1 &kp N8 &kp N3>;
+            label = "ZHANGHAO";
+        };
+
+        mima: mima {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&zhanghao &kp Z &kp LS(Z)>;
+            label = "MIMA";
+        };
+
+        phonenumber: phonenumber {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N9 &kp N5 &kp N1 &kp N1 &kp N6 &kp N8 &kp N1 &kp N0 &kp N7 &kp N2>;
+            label = "PHONENUMBER";
+        };
+
+        pinnumber: pinnumber {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N7 &kp N5 &kp N8 &kp N2 &kp N1 &kp N6>;
+            label = "PINNUMBER";
+        };
+
+        noticeword: noticeword {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp J &kp I &kp A &kp N &kp J &kp I &kp E &kp H &kp U &kp I &kp D &kp A &kp RPAR>;
+            label = "NOTICEWORD";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -292,10 +329,10 @@
 
         layer_2 {
             bindings = <
-&kp INS               &kp C_BRIGHTNESS_INC          &kp C_VOLUME_UP                &kp K_PREVIOUS  &kp K_SLEEP   &trans          &trans                    &trans                    &trans                    &trans
-&kp PSCRN             &kp C_BRIGHTNESS_DEC          &kp C_VOLUME_DOWN              &kp K_NEXT      &kp K_POWER   &trans          &trans                    &trans                    &trans                    &trans
-&bt BT_SEL 0          &bt BT_SEL 1                  &bt BT_SEL 2                   &bt BT_SEL 3    &bt BT_SEL 4  &trans          &kp LS(LA(LC(NUMBER_1)))  &kp LA(LS(LC(NUMBER_2)))  &kp LS(LA(LC(NUMBER_3)))  &kp LS(LA(LC(NUMBER_4)))
-              &trans                        &trans                     &bt BT_CLR                  &trans        &trans  &trans
+&kp INS               &kp C_BRIGHTNESS_INC          &kp C_VOLUME_UP           &kp K_PREVIOUS  &kp K_SLEEP   &trans             &trans                    &trans                    &trans                    &trans
+&kp PSCRN             &kp C_BRIGHTNESS_DEC          &kp C_VOLUME_DOWN         &kp K_NEXT      &kp K_POWER   &zhanghao          &phonenumber              &mima                     &pinnumber                &noticeword
+&bt BT_SEL 0          &bt BT_SEL 1                  &bt BT_SEL 2              &bt BT_SEL 3    &bt BT_SEL 4  &trans             &kp LS(LA(LC(NUMBER_1)))  &kp LA(LS(LC(NUMBER_2)))  &kp LS(LA(LC(NUMBER_3)))  &kp LS(LA(LC(NUMBER_4)))
+              &trans                        &trans                     &none                  &bt BT_CLR    &trans     &trans
             >;
         };
 
@@ -313,6 +350,15 @@
 &trans          &trans          &trans          &trans  &kp T   &trans          &trans  &trans  &trans  &trans
 &trans          &trans          &trans          &trans  &kp G   &trans          &trans  &trans  &trans  &trans
 &trans          &trans          &trans          &trans  &kp B   &trans          &trans  &trans  &trans  &trans
+        &trans          &trans          &trans          &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
+&trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
+&trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
         &trans          &trans          &trans          &trans  &trans  &trans
             >;
         };
