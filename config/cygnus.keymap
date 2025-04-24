@@ -297,13 +297,6 @@
             bindings = <&kp N7 &kp N5 &kp N8 &kp N2 &kp N1 &kp N6>;
             label = "PINNUMBER";
         };
-
-        noticeword: noticeword {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LPAR &kp J &kp I &kp A &kp N &kp J &kp I &kp E &kp H &kp U &kp I &kp D &kp A &kp RPAR>;
-            label = "NOTICEWORD";
-        };
     };
 
     keymap {
@@ -350,15 +343,6 @@
 &trans          &trans          &trans          &trans  &kp T   &trans          &trans  &trans  &trans  &trans
 &trans          &trans          &trans          &trans  &kp G   &trans          &trans  &trans  &trans  &trans
 &trans          &trans          &trans          &trans  &kp B   &trans          &trans  &trans  &trans  &trans
-        &trans          &trans          &trans          &trans  &trans  &trans
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-&trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
-&trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
-&trans          &trans          &trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
         &trans          &trans          &trans          &trans  &trans  &trans
             >;
         };
